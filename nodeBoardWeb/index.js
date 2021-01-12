@@ -6,7 +6,7 @@ var methodOverride = require('method-override');
 var flash = require('connect-flash');
 var session = require('express-session');
 var passport = require('./config/passport');
-
+var util = require('./util'); //page 관련된 것 부르기 위함 
 var app = express();
 
 //DB setting
@@ -35,10 +35,6 @@ app.use(session({secret:'Mysecret', resave:true, saveUninitialized:true}));//세
 //passport
 app.use(passport.initialize());
 app.use(passport.session());
-
-//
-var util = require('./util'); //page 관련된 것 부르기 위함 
-
 
 //custom Middlewares
 app.use(function(req,res,next){
