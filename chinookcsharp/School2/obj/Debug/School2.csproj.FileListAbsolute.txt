@@ -1,0 +1,15 @@
+D:\gitclone\chigit\chinookcsharp\School2\bin\Debug\School2.exe.config
+D:\gitclone\chigit\chinookcsharp\School2\bin\Debug\School2.exe
+D:\gitclone\chigit\chinookcsharp\School2\bin\Debug\School2.pdb
+D:\gitclone\chigit\chinookcsharp\School2\bin\Debug\EntityFramework.dll
+D:\gitclone\chigit\chinookcsharp\School2\bin\Debug\EntityFramework.SqlServer.dll
+D:\gitclone\chigit\chinookcsharp\School2\bin\Debug\School.exe
+D:\gitclone\chigit\chinookcsharp\School2\bin\Debug\School.pdb
+D:\gitclone\chigit\chinookcsharp\School2\bin\Debug\School.exe.config
+D:\gitclone\chigit\chinookcsharp\School2\bin\Debug\EntityFramework.xml
+D:\gitclone\chigit\chinookcsharp\School2\bin\Debug\EntityFramework.SqlServer.xml
+D:\gitclone\chigit\chinookcsharp\School2\obj\Debug\School2.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\School2\obj\Debug\School2.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\School2\obj\Debug\School2.csproj.CopyComplete
+D:\gitclone\chigit\chinookcsharp\School2\obj\Debug\School2.exe
+D:\gitclone\chigit\chinookcsharp\School2\obj\Debug\School2.pdb

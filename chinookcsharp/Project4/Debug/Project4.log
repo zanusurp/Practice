@@ -1,0 +1,5 @@
+﻿  test01.cpp
+D:\gitclone\chigit\chinookcsharp\Project4\test01.cpp(4,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+D:\gitclone\chigit\chinookcsharp\Project4\test01.cpp(33,17): warning C4305: 'initializing': truncation from 'int' to 'char'
+D:\gitclone\chigit\chinookcsharp\Project4\test01.cpp(33,12): warning C4309: 'initializing': truncation of constant value
+  Project4.vcxproj -> D:\gitclone\chigit\chinookcsharp\Debug\Project4.exe

@@ -1,0 +1,6 @@
+D:\gitclone\chigit\chinookcsharp\KMESendRecvLib\bin\Debug\KMESendRecvLib.dll
+D:\gitclone\chigit\chinookcsharp\KMESendRecvLib\bin\Debug\KMESendRecvLib.pdb
+D:\gitclone\chigit\chinookcsharp\KMESendRecvLib\obj\Debug\KMESendRecvLib.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\KMESendRecvLib\obj\Debug\KMESendRecvLib.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\KMESendRecvLib\obj\Debug\KMESendRecvLib.dll
+D:\gitclone\chigit\chinookcsharp\KMESendRecvLib\obj\Debug\KMESendRecvLib.pdb

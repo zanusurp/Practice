@@ -1,0 +1,16 @@
+D:\gitclone\chigit\chinookcsharp\RemoteControlProject\bin\Debug\RemoteControlProject.exe.config
+D:\gitclone\chigit\chinookcsharp\RemoteControlProject\bin\Debug\RemoteControlProject.exe
+D:\gitclone\chigit\chinookcsharp\RemoteControlProject\bin\Debug\RemoteControlProject.pdb
+D:\gitclone\chigit\chinookcsharp\RemoteControlProject\obj\Debug\RemoteControlProject.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\RemoteControlProject\obj\Debug\RemoteControlProject.MainForm.resources
+D:\gitclone\chigit\chinookcsharp\RemoteControlProject\obj\Debug\RemoteControlProject.Properties.Resources.resources
+D:\gitclone\chigit\chinookcsharp\RemoteControlProject\obj\Debug\RemoteControlProject.csproj.GenerateResource.cache
+D:\gitclone\chigit\chinookcsharp\RemoteControlProject\obj\Debug\RemoteControlProject.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\RemoteControlProject\obj\Debug\RemoteControlProject.exe
+D:\gitclone\chigit\chinookcsharp\RemoteControlProject\obj\Debug\RemoteControlProject.pdb
+D:\gitclone\chigit\chinookcsharp\RemoteControlProject\bin\Debug\RecvRCInfoEventLib.dll
+D:\gitclone\chigit\chinookcsharp\RemoteControlProject\bin\Debug\RecvRCInfoEventLib.pdb
+D:\gitclone\chigit\chinookcsharp\RemoteControlProject\bin\Debug\RecvRCInfoEventLib.xml
+D:\gitclone\chigit\chinookcsharp\RemoteControlProject\obj\Debug\RemoteControlProject.csproj.CopyComplete
+D:\gitclone\chigit\chinookcsharp\RemoteControlProject\obj\Debug\RemoteControlProject.RemoteClientForm.resources
+D:\gitclone\chigit\chinookcsharp\RemoteControlProject\bin\Debug\RemoteControlProject.xml

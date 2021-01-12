@@ -1,0 +1,6 @@
+D:\gitclone\chigit\chinookcsharp\EHAAALib\bin\Debug\EHAAALib.dll
+D:\gitclone\chigit\chinookcsharp\EHAAALib\bin\Debug\EHAAALib.pdb
+D:\gitclone\chigit\chinookcsharp\EHAAALib\obj\Debug\EHAAALib.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\EHAAALib\obj\Debug\EHAAALib.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\EHAAALib\obj\Debug\EHAAALib.dll
+D:\gitclone\chigit\chinookcsharp\EHAAALib\obj\Debug\EHAAALib.pdb

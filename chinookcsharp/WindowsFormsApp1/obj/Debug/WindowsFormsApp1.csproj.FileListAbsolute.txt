@@ -1,0 +1,16 @@
+D:\gitclone\chigit\chinookcsharp\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\gitclone\chigit\chinookcsharp\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\gitclone\chigit\chinookcsharp\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\gitclone\chigit\chinookcsharp\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+D:\gitclone\chigit\chinookcsharp\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+D:\gitclone\chigit\chinookcsharp\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+D:\gitclone\chigit\chinookcsharp\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+D:\gitclone\chigit\chinookcsharp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\gitclone\chigit\chinookcsharp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\gitclone\chigit\chinookcsharp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\gitclone\chigit\chinookcsharp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+D:\gitclone\chigit\chinookcsharp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\gitclone\chigit\chinookcsharp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\gitclone\chigit\chinookcsharp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.miniform.resources

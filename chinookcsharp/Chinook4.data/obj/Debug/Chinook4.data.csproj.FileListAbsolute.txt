@@ -1,0 +1,12 @@
+D:\gitclone\chigit\chinookcsharp\Chinook4.data\bin\Debug\Chinook4.data.dll.config
+D:\gitclone\chigit\chinookcsharp\Chinook4.data\bin\Debug\Chinook4.data.dll
+D:\gitclone\chigit\chinookcsharp\Chinook4.data\bin\Debug\Chinook4.data.pdb
+D:\gitclone\chigit\chinookcsharp\Chinook4.data\bin\Debug\EntityFramework.dll
+D:\gitclone\chigit\chinookcsharp\Chinook4.data\bin\Debug\EntityFramework.SqlServer.dll
+D:\gitclone\chigit\chinookcsharp\Chinook4.data\bin\Debug\EntityFramework.xml
+D:\gitclone\chigit\chinookcsharp\Chinook4.data\bin\Debug\EntityFramework.SqlServer.xml
+D:\gitclone\chigit\chinookcsharp\Chinook4.data\obj\Debug\Chinook4.data.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\Chinook4.data\obj\Debug\Chinook4.data.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\Chinook4.data\obj\Debug\Chinook4.data.csproj.CopyComplete
+D:\gitclone\chigit\chinookcsharp\Chinook4.data\obj\Debug\Chinook4.data.dll
+D:\gitclone\chigit\chinookcsharp\Chinook4.data\obj\Debug\Chinook4.data.pdb

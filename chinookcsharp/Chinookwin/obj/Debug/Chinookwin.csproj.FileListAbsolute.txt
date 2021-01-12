@@ -1,0 +1,15 @@
+D:\gitclone\chigit\chinookcsharp\Chinookwin\bin\Debug\Chinookwin.exe.config
+D:\gitclone\chigit\chinookcsharp\Chinookwin\bin\Debug\Chinookwin.exe
+D:\gitclone\chigit\chinookcsharp\Chinookwin\bin\Debug\Chinookwin.pdb
+D:\gitclone\chigit\chinookcsharp\Chinookwin\obj\Debug\Chinookwin.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\Chinookwin\obj\Debug\Chinookwin.Form1.resources
+D:\gitclone\chigit\chinookcsharp\Chinookwin\obj\Debug\Chinookwin.Properties.Resources.resources
+D:\gitclone\chigit\chinookcsharp\Chinookwin\obj\Debug\Chinookwin.csproj.GenerateResource.cache
+D:\gitclone\chigit\chinookcsharp\Chinookwin\obj\Debug\Chinookwin.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\Chinookwin\obj\Debug\Chinookwin.exe
+D:\gitclone\chigit\chinookcsharp\Chinookwin\obj\Debug\Chinookwin.pdb
+D:\gitclone\chigit\chinookcsharp\Chinookwin\bin\Debug\EntityFramework.dll
+D:\gitclone\chigit\chinookcsharp\Chinookwin\bin\Debug\EntityFramework.SqlServer.dll
+D:\gitclone\chigit\chinookcsharp\Chinookwin\bin\Debug\EntityFramework.xml
+D:\gitclone\chigit\chinookcsharp\Chinookwin\bin\Debug\EntityFramework.SqlServer.xml
+D:\gitclone\chigit\chinookcsharp\Chinookwin\obj\Debug\Chinookwin.csproj.CopyComplete

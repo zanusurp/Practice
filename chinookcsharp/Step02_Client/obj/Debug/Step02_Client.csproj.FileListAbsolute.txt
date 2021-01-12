@@ -1,0 +1,6 @@
+D:\gitclone\chigit\chinookcsharp\Step02_Client\bin\Debug\Step02_Client.exe.config
+D:\gitclone\chigit\chinookcsharp\Step02_Client\bin\Debug\Step02_Client.exe
+D:\gitclone\chigit\chinookcsharp\Step02_Client\bin\Debug\Step02_Client.pdb
+D:\gitclone\chigit\chinookcsharp\Step02_Client\obj\Debug\Step02_Client.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\Step02_Client\obj\Debug\Step02_Client.exe
+D:\gitclone\chigit\chinookcsharp\Step02_Client\obj\Debug\Step02_Client.pdb

@@ -1,0 +1,6 @@
+D:\gitclone\chigit\chinookcsharp\GeneralLib\bin\Debug\GeneralLib.dll
+D:\gitclone\chigit\chinookcsharp\GeneralLib\bin\Debug\GeneralLib.pdb
+D:\gitclone\chigit\chinookcsharp\GeneralLib\obj\Debug\GeneralLib.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\GeneralLib\obj\Debug\GeneralLib.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\GeneralLib\obj\Debug\GeneralLib.dll
+D:\gitclone\chigit\chinookcsharp\GeneralLib\obj\Debug\GeneralLib.pdb

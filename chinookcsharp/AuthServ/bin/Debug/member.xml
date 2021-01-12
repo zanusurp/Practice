@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <회원>
+    <id>aaa</id>
+    <pw>aaa</pw>
+  </회원>
+  <회원>
+    <id>bbb</id>
+    <pw>bbb</pw>
+  </회원>
+  <회원>
+    <id>ccc</id>
+    <pw>cc</pw>
+  </회원>
+</DocumentElement>

@@ -1,0 +1,10 @@
+D:\gitclone\chigit\chinookcsharp\Chinook.cui\bin\Debug\Chinook.cui.exe.config
+D:\gitclone\chigit\chinookcsharp\Chinook.cui\bin\Debug\Chinook.cui.exe
+D:\gitclone\chigit\chinookcsharp\Chinook.cui\bin\Debug\Chinook.cui.pdb
+D:\gitclone\chigit\chinookcsharp\Chinook.cui\obj\Debug\Chinook.cui.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\Chinook.cui\obj\Debug\Chinook.cui.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\Chinook.cui\obj\Debug\Chinook.cui.exe
+D:\gitclone\chigit\chinookcsharp\Chinook.cui\obj\Debug\Chinook.cui.pdb
+D:\gitclone\chigit\chinookcsharp\Chinook.cui\bin\Debug\Chinook.dll
+D:\gitclone\chigit\chinookcsharp\Chinook.cui\bin\Debug\Chinook.pdb
+D:\gitclone\chigit\chinookcsharp\Chinook.cui\obj\Debug\Chinook.cui.csproj.CopyComplete

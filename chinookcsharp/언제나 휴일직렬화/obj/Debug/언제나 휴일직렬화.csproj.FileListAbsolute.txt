@@ -1,0 +1,7 @@
+D:\gitclone\chigit\chinookcsharp\언제나 휴일직렬화\bin\Debug\언제나 휴일직렬화.exe.config
+D:\gitclone\chigit\chinookcsharp\언제나 휴일직렬화\bin\Debug\언제나 휴일직렬화.exe
+D:\gitclone\chigit\chinookcsharp\언제나 휴일직렬화\bin\Debug\언제나 휴일직렬화.pdb
+D:\gitclone\chigit\chinookcsharp\언제나 휴일직렬화\obj\Debug\언제나 휴일직렬화.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\언제나 휴일직렬화\obj\Debug\언제나 휴일직렬화.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\언제나 휴일직렬화\obj\Debug\언제나 휴일직렬화.exe
+D:\gitclone\chigit\chinookcsharp\언제나 휴일직렬화\obj\Debug\언제나 휴일직렬화.pdb

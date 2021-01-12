@@ -1,0 +1,14 @@
+D:\gitclone\chigit\chinookcsharp\Filereading\bin\Debug\Filereading.exe.config
+D:\gitclone\chigit\chinookcsharp\Filereading\bin\Debug\Filereading.exe
+D:\gitclone\chigit\chinookcsharp\Filereading\bin\Debug\Filereading.pdb
+D:\gitclone\chigit\chinookcsharp\Filereading\obj\Debug\Filereading.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\Filereading\obj\Debug\Filereading.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\Filereading\obj\Debug\Filereading.exe
+D:\gitclone\chigit\chinookcsharp\Filereading\obj\Debug\Filereading.pdb
+D:\gitclone\chigit\chinookcsharp\Filereading\bin\Debug\Newtonsoft.Json.dll
+D:\gitclone\chigit\chinookcsharp\Filereading\bin\Debug\Newtonsoft.Json.xml
+D:\gitclone\chigit\chinookcsharp\Filereading\obj\Debug\Filereading.csproj.CopyComplete
+D:\gitclone\chigit\chinookcsharp\Filereading\bin\Debug\EntityFramework.dll
+D:\gitclone\chigit\chinookcsharp\Filereading\bin\Debug\EntityFramework.SqlServer.dll
+D:\gitclone\chigit\chinookcsharp\Filereading\bin\Debug\EntityFramework.xml
+D:\gitclone\chigit\chinookcsharp\Filereading\bin\Debug\EntityFramework.SqlServer.xml

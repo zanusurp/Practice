@@ -1,0 +1,10 @@
+D:\gitclone\chigit\chinookcsharp\AuthServ\bin\Debug\AuthServ.exe.config
+D:\gitclone\chigit\chinookcsharp\AuthServ\bin\Debug\AuthServ.exe
+D:\gitclone\chigit\chinookcsharp\AuthServ\bin\Debug\AuthServ.pdb
+D:\gitclone\chigit\chinookcsharp\AuthServ\bin\Debug\EHAAALib.dll
+D:\gitclone\chigit\chinookcsharp\AuthServ\bin\Debug\EHAAALib.pdb
+D:\gitclone\chigit\chinookcsharp\AuthServ\obj\Debug\AuthServ.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\AuthServ\obj\Debug\AuthServ.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\AuthServ\obj\Debug\AuthServ.csproj.CopyComplete
+D:\gitclone\chigit\chinookcsharp\AuthServ\obj\Debug\AuthServ.exe
+D:\gitclone\chigit\chinookcsharp\AuthServ\obj\Debug\AuthServ.pdb

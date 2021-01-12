@@ -1,0 +1,10 @@
+D:\gitclone\chigit\chinookcsharp\NTierCalc.cui\bin\Debug\NTierCalc.cui.exe.config
+D:\gitclone\chigit\chinookcsharp\NTierCalc.cui\bin\Debug\NTierCalc.cui.exe
+D:\gitclone\chigit\chinookcsharp\NTierCalc.cui\bin\Debug\NTierCalc.cui.pdb
+D:\gitclone\chigit\chinookcsharp\NTierCalc.cui\bin\Debug\NTierCalc.Engine.dll
+D:\gitclone\chigit\chinookcsharp\NTierCalc.cui\bin\Debug\NTierCalc.Engine.pdb
+D:\gitclone\chigit\chinookcsharp\NTierCalc.cui\obj\Debug\NTierCalc.cui.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\NTierCalc.cui\obj\Debug\NTierCalc.cui.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\NTierCalc.cui\obj\Debug\NTierCalc.cui.csproj.CopyComplete
+D:\gitclone\chigit\chinookcsharp\NTierCalc.cui\obj\Debug\NTierCalc.cui.exe
+D:\gitclone\chigit\chinookcsharp\NTierCalc.cui\obj\Debug\NTierCalc.cui.pdb

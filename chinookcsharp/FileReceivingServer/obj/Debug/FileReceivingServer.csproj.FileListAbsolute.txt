@@ -1,0 +1,7 @@
+D:\gitclone\chigit\chinookcsharp\FileReceivingServer\obj\Debug\FileReceivingServer.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\FileReceivingServer\obj\Debug\FileReceivingServer.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\FileReceivingServer\bin\Debug\FileReceivingServer.exe.config
+D:\gitclone\chigit\chinookcsharp\FileReceivingServer\bin\Debug\FileReceivingServer.exe
+D:\gitclone\chigit\chinookcsharp\FileReceivingServer\bin\Debug\FileReceivingServer.pdb
+D:\gitclone\chigit\chinookcsharp\FileReceivingServer\obj\Debug\FileReceivingServer.exe
+D:\gitclone\chigit\chinookcsharp\FileReceivingServer\obj\Debug\FileReceivingServer.pdb

@@ -1,0 +1,6 @@
+D:\gitclone\chigit\chinookcsharp\Step02_Server_Defined_Class\obj\Debug\Step02_Server_Defined_Class.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\Step02_Server_Defined_Class\bin\Debug\Step02_Server_Defined_Class.exe.config
+D:\gitclone\chigit\chinookcsharp\Step02_Server_Defined_Class\bin\Debug\Step02_Server_Defined_Class.exe
+D:\gitclone\chigit\chinookcsharp\Step02_Server_Defined_Class\bin\Debug\Step02_Server_Defined_Class.pdb
+D:\gitclone\chigit\chinookcsharp\Step02_Server_Defined_Class\obj\Debug\Step02_Server_Defined_Class.exe
+D:\gitclone\chigit\chinookcsharp\Step02_Server_Defined_Class\obj\Debug\Step02_Server_Defined_Class.pdb

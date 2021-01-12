@@ -1,0 +1,6 @@
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3\bin\Debug\Chinook.Step3.dll
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3\bin\Debug\Chinook.Step3.pdb
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3\obj\Debug\Chinook.Step3.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3\obj\Debug\Chinook.Step3.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3\obj\Debug\Chinook.Step3.dll
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3\obj\Debug\Chinook.Step3.pdb

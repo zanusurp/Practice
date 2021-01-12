@@ -1,0 +1,5 @@
+D:\gitclone\chigit\chinookcsharp\Chinook\bin\Debug\Chinook.dll
+D:\gitclone\chigit\chinookcsharp\Chinook\bin\Debug\Chinook.pdb
+D:\gitclone\chigit\chinookcsharp\Chinook\obj\Debug\Chinook.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\Chinook\obj\Debug\Chinook.dll
+D:\gitclone\chigit\chinookcsharp\Chinook\obj\Debug\Chinook.pdb

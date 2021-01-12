@@ -1,0 +1,9 @@
+D:\gitclone\chigit\chinookcsharp\Chinook.gui\bin\Debug\Chinook.gui.exe.config
+D:\gitclone\chigit\chinookcsharp\Chinook.gui\bin\Debug\Chinook.gui.exe
+D:\gitclone\chigit\chinookcsharp\Chinook.gui\bin\Debug\Chinook.gui.pdb
+D:\gitclone\chigit\chinookcsharp\Chinook.gui\obj\Debug\Chinook.gui.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\Chinook.gui\obj\Debug\Chinook.gui.Properties.Resources.resources
+D:\gitclone\chigit\chinookcsharp\Chinook.gui\obj\Debug\Chinook.gui.csproj.GenerateResource.cache
+D:\gitclone\chigit\chinookcsharp\Chinook.gui\obj\Debug\Chinook.gui.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\Chinook.gui\obj\Debug\Chinook.gui.exe
+D:\gitclone\chigit\chinookcsharp\Chinook.gui\obj\Debug\Chinook.gui.pdb

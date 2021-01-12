@@ -1,0 +1,6 @@
+D:\gitclone\chigit\chinookcsharp\NTierCalc.Engine\bin\Debug\NTierCalc.Engine.dll
+D:\gitclone\chigit\chinookcsharp\NTierCalc.Engine\bin\Debug\NTierCalc.Engine.pdb
+D:\gitclone\chigit\chinookcsharp\NTierCalc.Engine\obj\Debug\NTierCalc.Engine.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\NTierCalc.Engine\obj\Debug\NTierCalc.Engine.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\NTierCalc.Engine\obj\Debug\NTierCalc.Engine.dll
+D:\gitclone\chigit\chinookcsharp\NTierCalc.Engine\obj\Debug\NTierCalc.Engine.pdb

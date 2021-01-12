@@ -1,0 +1,6 @@
+D:\gitclone\chigit\chinookcsharp\ZImageSendRecvLib\bin\Debug\ZImageSendRecvLib.dll
+D:\gitclone\chigit\chinookcsharp\ZImageSendRecvLib\bin\Debug\ZImageSendRecvLib.pdb
+D:\gitclone\chigit\chinookcsharp\ZImageSendRecvLib\obj\Debug\ZImageSendRecvLib.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\ZImageSendRecvLib\obj\Debug\ZImageSendRecvLib.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\ZImageSendRecvLib\obj\Debug\ZImageSendRecvLib.dll
+D:\gitclone\chigit\chinookcsharp\ZImageSendRecvLib\obj\Debug\ZImageSendRecvLib.pdb

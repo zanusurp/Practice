@@ -1,0 +1,13 @@
+D:\gitclone\chigit\chinookcsharp\NTierCalc\bin\Debug\NTierCalc.exe.config
+D:\gitclone\chigit\chinookcsharp\NTierCalc\bin\Debug\NTierCalc.exe
+D:\gitclone\chigit\chinookcsharp\NTierCalc\bin\Debug\NTierCalc.pdb
+D:\gitclone\chigit\chinookcsharp\NTierCalc\bin\Debug\NTierCalc.Engine.dll
+D:\gitclone\chigit\chinookcsharp\NTierCalc\bin\Debug\NTierCalc.Engine.pdb
+D:\gitclone\chigit\chinookcsharp\NTierCalc\obj\Debug\NTierCalc.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\NTierCalc\obj\Debug\NTierCalc.Form1.resources
+D:\gitclone\chigit\chinookcsharp\NTierCalc\obj\Debug\NTierCalc.Properties.Resources.resources
+D:\gitclone\chigit\chinookcsharp\NTierCalc\obj\Debug\NTierCalc.csproj.GenerateResource.cache
+D:\gitclone\chigit\chinookcsharp\NTierCalc\obj\Debug\NTierCalc.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\NTierCalc\obj\Debug\NTierCalc.csproj.CopyComplete
+D:\gitclone\chigit\chinookcsharp\NTierCalc\obj\Debug\NTierCalc.exe
+D:\gitclone\chigit\chinookcsharp\NTierCalc\obj\Debug\NTierCalc.pdb

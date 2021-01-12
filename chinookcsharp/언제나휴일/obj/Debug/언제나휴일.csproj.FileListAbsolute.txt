@@ -1,0 +1,7 @@
+D:\gitclone\chigit\chinookcsharp\언제나휴일\bin\Debug\언제나휴일.exe.config
+D:\gitclone\chigit\chinookcsharp\언제나휴일\bin\Debug\언제나휴일.exe
+D:\gitclone\chigit\chinookcsharp\언제나휴일\bin\Debug\언제나휴일.pdb
+D:\gitclone\chigit\chinookcsharp\언제나휴일\obj\Debug\언제나휴일.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\언제나휴일\obj\Debug\언제나휴일.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\언제나휴일\obj\Debug\언제나휴일.exe
+D:\gitclone\chigit\chinookcsharp\언제나휴일\obj\Debug\언제나휴일.pdb

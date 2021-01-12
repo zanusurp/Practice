@@ -1,0 +1,6 @@
+D:\gitclone\chigit\chinookcsharp\RecvRCInfoEventLib\bin\Debug\RecvRCInfoEventLib.dll
+D:\gitclone\chigit\chinookcsharp\RecvRCInfoEventLib\bin\Debug\RecvRCInfoEventLib.pdb
+D:\gitclone\chigit\chinookcsharp\RecvRCInfoEventLib\obj\Debug\RecvRCInfoEventLib.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\RecvRCInfoEventLib\obj\Debug\RecvRCInfoEventLib.dll
+D:\gitclone\chigit\chinookcsharp\RecvRCInfoEventLib\obj\Debug\RecvRCInfoEventLib.pdb
+D:\gitclone\chigit\chinookcsharp\RecvRCInfoEventLib\bin\Debug\RecvRCInfoEventLib.xml

@@ -1,0 +1,15 @@
+D:\gitclone\chigit\chinookcsharp\이미지캡쳐 및 전송 클라이언트\bin\Debug\이미지캡쳐 및 전송 클라이언트.exe.config
+D:\gitclone\chigit\chinookcsharp\이미지캡쳐 및 전송 클라이언트\bin\Debug\이미지캡쳐 및 전송 클라이언트.exe
+D:\gitclone\chigit\chinookcsharp\이미지캡쳐 및 전송 클라이언트\bin\Debug\이미지캡쳐 및 전송 클라이언트.pdb
+D:\gitclone\chigit\chinookcsharp\이미지캡쳐 및 전송 클라이언트\bin\Debug\ZImageSendRecvLib.dll
+D:\gitclone\chigit\chinookcsharp\이미지캡쳐 및 전송 클라이언트\bin\Debug\ZImageSendRecvLib.pdb
+D:\gitclone\chigit\chinookcsharp\이미지캡쳐 및 전송 클라이언트\obj\Debug\이미지캡쳐_및_전송_클라이언트.Form1.resources
+D:\gitclone\chigit\chinookcsharp\이미지캡쳐 및 전송 클라이언트\obj\Debug\이미지캡쳐_및_전송_클라이언트.Properties.Resources.resources
+D:\gitclone\chigit\chinookcsharp\이미지캡쳐 및 전송 클라이언트\obj\Debug\이미지캡쳐 및 전송 클라이언트.csproj.GenerateResource.cache
+D:\gitclone\chigit\chinookcsharp\이미지캡쳐 및 전송 클라이언트\obj\Debug\이미지캡쳐 및 전송 클라이언트.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\이미지캡쳐 및 전송 클라이언트\obj\Debug\이미지캡쳐 및 전송 클라이언트.csproj.CopyComplete
+D:\gitclone\chigit\chinookcsharp\이미지캡쳐 및 전송 클라이언트\obj\Debug\이미지캡쳐 및 전송 클라이언트.exe
+D:\gitclone\chigit\chinookcsharp\이미지캡쳐 및 전송 클라이언트\obj\Debug\이미지캡쳐 및 전송 클라이언트.pdb
+D:\gitclone\chigit\chinookcsharp\이미지캡쳐 및 전송 클라이언트\bin\Debug\KMESendRecvLib.dll
+D:\gitclone\chigit\chinookcsharp\이미지캡쳐 및 전송 클라이언트\bin\Debug\KMESendRecvLib.pdb
+D:\gitclone\chigit\chinookcsharp\이미지캡쳐 및 전송 클라이언트\obj\Debug\이미지캡쳐 및 전송 클라이언트.csprojAssemblyReference.cache

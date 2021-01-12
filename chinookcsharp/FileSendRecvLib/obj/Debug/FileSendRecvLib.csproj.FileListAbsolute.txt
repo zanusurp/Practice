@@ -1,0 +1,5 @@
+D:\gitclone\chigit\chinookcsharp\FileSendRecvLib\bin\Debug\FileSendRecvLib.dll
+D:\gitclone\chigit\chinookcsharp\FileSendRecvLib\bin\Debug\FileSendRecvLib.pdb
+D:\gitclone\chigit\chinookcsharp\FileSendRecvLib\obj\Debug\FileSendRecvLib.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\FileSendRecvLib\obj\Debug\FileSendRecvLib.dll
+D:\gitclone\chigit\chinookcsharp\FileSendRecvLib\obj\Debug\FileSendRecvLib.pdb

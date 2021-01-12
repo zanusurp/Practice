@@ -1,0 +1,7 @@
+D:\gitclone\chigit\chinookcsharp\chinookcsharp\bin\Debug\chinookcsharp.exe.config
+D:\gitclone\chigit\chinookcsharp\chinookcsharp\bin\Debug\chinookcsharp.exe
+D:\gitclone\chigit\chinookcsharp\chinookcsharp\bin\Debug\chinookcsharp.pdb
+D:\gitclone\chigit\chinookcsharp\chinookcsharp\obj\Debug\chinookcsharp.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\chinookcsharp\obj\Debug\chinookcsharp.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\chinookcsharp\obj\Debug\chinookcsharp.exe
+D:\gitclone\chigit\chinookcsharp\chinookcsharp\obj\Debug\chinookcsharp.pdb

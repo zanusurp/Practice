@@ -1,0 +1,2 @@
+00 1 2 3 4 outputtxt tst
+1234

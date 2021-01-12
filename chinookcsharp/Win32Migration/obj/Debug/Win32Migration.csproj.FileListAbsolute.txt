@@ -1,0 +1,7 @@
+D:\gitclone\chigit\chinookcsharp\Win32Migration\bin\Debug\Win32Migration.exe.config
+D:\gitclone\chigit\chinookcsharp\Win32Migration\bin\Debug\Win32Migration.exe
+D:\gitclone\chigit\chinookcsharp\Win32Migration\bin\Debug\Win32Migration.pdb
+D:\gitclone\chigit\chinookcsharp\Win32Migration\obj\Debug\Win32Migration.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\Win32Migration\obj\Debug\Win32Migration.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\Win32Migration\obj\Debug\Win32Migration.exe
+D:\gitclone\chigit\chinookcsharp\Win32Migration\obj\Debug\Win32Migration.pdb

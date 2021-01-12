@@ -1,0 +1,10 @@
+D:\gitclone\chigit\chinookcsharp\언제나휴일_도서검색csv_카카오api\bin\Debug\언제나휴일_도서검색csv_카카오api.exe.config
+D:\gitclone\chigit\chinookcsharp\언제나휴일_도서검색csv_카카오api\bin\Debug\언제나휴일_도서검색csv_카카오api.exe
+D:\gitclone\chigit\chinookcsharp\언제나휴일_도서검색csv_카카오api\bin\Debug\언제나휴일_도서검색csv_카카오api.pdb
+D:\gitclone\chigit\chinookcsharp\언제나휴일_도서검색csv_카카오api\obj\Debug\언제나휴일_도서검색csv_카카오api.Form1.resources
+D:\gitclone\chigit\chinookcsharp\언제나휴일_도서검색csv_카카오api\obj\Debug\언제나휴일_도서검색csv_카카오api.Properties.Resources.resources
+D:\gitclone\chigit\chinookcsharp\언제나휴일_도서검색csv_카카오api\obj\Debug\언제나휴일_도서검색csv_카카오api.csproj.GenerateResource.cache
+D:\gitclone\chigit\chinookcsharp\언제나휴일_도서검색csv_카카오api\obj\Debug\언제나휴일_도서검색csv_카카오api.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\언제나휴일_도서검색csv_카카오api\obj\Debug\언제나휴일_도서검색csv_카카오api.exe
+D:\gitclone\chigit\chinookcsharp\언제나휴일_도서검색csv_카카오api\obj\Debug\언제나휴일_도서검색csv_카카오api.pdb
+D:\gitclone\chigit\chinookcsharp\언제나휴일_도서검색csv_카카오api\obj\Debug\언제나휴일_도서검색csv_카카오api.csprojAssemblyReference.cache

@@ -1,0 +1,16 @@
+D:\gitclone\chigit\chinookcsharp\MessageForm01\bin\Debug\MessageForm01.exe.config
+D:\gitclone\chigit\chinookcsharp\MessageForm01\bin\Debug\MessageForm01.exe
+D:\gitclone\chigit\chinookcsharp\MessageForm01\bin\Debug\MessageForm01.pdb
+D:\gitclone\chigit\chinookcsharp\MessageForm01\obj\Debug\MessageForm01.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\MessageForm01\obj\Debug\MessageForm01.Properties.Resources.resources
+D:\gitclone\chigit\chinookcsharp\MessageForm01\obj\Debug\MessageForm01.csproj.GenerateResource.cache
+D:\gitclone\chigit\chinookcsharp\MessageForm01\obj\Debug\MessageForm01.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\MessageForm01\obj\Debug\MessageForm01.exe
+D:\gitclone\chigit\chinookcsharp\MessageForm01\obj\Debug\MessageForm01.pdb
+D:\gitclone\chigit\chinookcsharp\MessageForm01\bin\Debug\FileSendRecvLib.dll
+D:\gitclone\chigit\chinookcsharp\MessageForm01\bin\Debug\FileSendRecvLib.pdb
+D:\gitclone\chigit\chinookcsharp\MessageForm01\obj\Debug\MessageForm01.csproj.CopyComplete
+D:\gitclone\chigit\chinookcsharp\MessageForm01\bin\Debug\EHAAALib.dll
+D:\gitclone\chigit\chinookcsharp\MessageForm01\bin\Debug\EHAAALib.pdb
+D:\gitclone\chigit\chinookcsharp\MessageForm01\obj\Debug\MessageForm01.MainForm.resources
+D:\gitclone\chigit\chinookcsharp\MessageForm01\obj\Debug\MessageForm01.StartForm.resources

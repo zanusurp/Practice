@@ -1,0 +1,9 @@
+D:\gitclone\chigit\chinookcsharp\RemotingCli\bin\Debug\RemotingCli.exe.config
+D:\gitclone\chigit\chinookcsharp\RemotingCli\bin\Debug\RemotingCli.exe
+D:\gitclone\chigit\chinookcsharp\RemotingCli\bin\Debug\RemotingCli.pdb
+D:\gitclone\chigit\chinookcsharp\RemotingCli\bin\Debug\GeneralLib.dll
+D:\gitclone\chigit\chinookcsharp\RemotingCli\bin\Debug\GeneralLib.pdb
+D:\gitclone\chigit\chinookcsharp\RemotingCli\obj\Debug\RemotingCli.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\RemotingCli\obj\Debug\RemotingCli.csproj.CopyComplete
+D:\gitclone\chigit\chinookcsharp\RemotingCli\obj\Debug\RemotingCli.exe
+D:\gitclone\chigit\chinookcsharp\RemotingCli\obj\Debug\RemotingCli.pdb

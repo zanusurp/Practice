@@ -1,0 +1,14 @@
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3.Unittest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3.Unittest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3.Unittest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3.Unittest\bin\Debug\Chinook.Step3.Unittest.dll
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3.Unittest\bin\Debug\Chinook.Step3.Unittest.pdb
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3.Unittest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3.Unittest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3.Unittest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3.Unittest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3.Unittest\obj\Debug\Chinook.Step3.Unittest.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3.Unittest\obj\Debug\Chinook.Step3.Unittest.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3.Unittest\obj\Debug\Chinook.Step3.Unittest.csproj.CopyComplete
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3.Unittest\obj\Debug\Chinook.Step3.Unittest.dll
+D:\gitclone\chigit\chinookcsharp\Chinook.Step3.Unittest\obj\Debug\Chinook.Step3.Unittest.pdb

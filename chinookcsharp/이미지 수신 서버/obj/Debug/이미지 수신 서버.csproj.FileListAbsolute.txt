@@ -1,0 +1,15 @@
+D:\gitclone\chigit\chinookcsharp\이미지 수신 서버\bin\Debug\이미지 수신 서버.exe.config
+D:\gitclone\chigit\chinookcsharp\이미지 수신 서버\bin\Debug\이미지 수신 서버.exe
+D:\gitclone\chigit\chinookcsharp\이미지 수신 서버\bin\Debug\이미지 수신 서버.pdb
+D:\gitclone\chigit\chinookcsharp\이미지 수신 서버\bin\Debug\ZImageSendRecvLib.dll
+D:\gitclone\chigit\chinookcsharp\이미지 수신 서버\bin\Debug\ZImageSendRecvLib.pdb
+D:\gitclone\chigit\chinookcsharp\이미지 수신 서버\obj\Debug\이미지 수신 서버.csprojAssemblyReference.cache
+D:\gitclone\chigit\chinookcsharp\이미지 수신 서버\obj\Debug\이미지_수신_서버.Form1.resources
+D:\gitclone\chigit\chinookcsharp\이미지 수신 서버\obj\Debug\이미지_수신_서버.Properties.Resources.resources
+D:\gitclone\chigit\chinookcsharp\이미지 수신 서버\obj\Debug\이미지 수신 서버.csproj.GenerateResource.cache
+D:\gitclone\chigit\chinookcsharp\이미지 수신 서버\obj\Debug\이미지 수신 서버.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\이미지 수신 서버\obj\Debug\이미지 수신 서버.csproj.CopyComplete
+D:\gitclone\chigit\chinookcsharp\이미지 수신 서버\obj\Debug\이미지 수신 서버.exe
+D:\gitclone\chigit\chinookcsharp\이미지 수신 서버\obj\Debug\이미지 수신 서버.pdb
+D:\gitclone\chigit\chinookcsharp\이미지 수신 서버\bin\Debug\KMESendRecvLib.dll
+D:\gitclone\chigit\chinookcsharp\이미지 수신 서버\bin\Debug\KMESendRecvLib.pdb

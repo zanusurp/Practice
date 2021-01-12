@@ -1,0 +1,6 @@
+D:\gitclone\chigit\chinookcsharp\FileSendingClient\bin\Debug\FileSendingClient.exe.config
+D:\gitclone\chigit\chinookcsharp\FileSendingClient\bin\Debug\FileSendingClient.exe
+D:\gitclone\chigit\chinookcsharp\FileSendingClient\bin\Debug\FileSendingClient.pdb
+D:\gitclone\chigit\chinookcsharp\FileSendingClient\obj\Debug\FileSendingClient.csproj.CoreCompileInputs.cache
+D:\gitclone\chigit\chinookcsharp\FileSendingClient\obj\Debug\FileSendingClient.exe
+D:\gitclone\chigit\chinookcsharp\FileSendingClient\obj\Debug\FileSendingClient.pdb
