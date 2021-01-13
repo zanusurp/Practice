@@ -37,7 +37,7 @@ $(document).ready(function(){
 });
 
 $(function(){
-    var search = window.location.search; 
+    var search = window.location.search; //서치 하는 것 찾음
     var params = {};
   
     if(search){ 
