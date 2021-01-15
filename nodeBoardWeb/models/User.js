@@ -1,6 +1,6 @@
 //model User
 var mongoose = require('mongoose');
-var bcrypt = require('bcryptjs');
+var bcrypt = require('bcryptjs'); //hash 비밀번호 
 //schema
 var userSchema = mongoose.Schema({
     username:{
@@ -90,8 +90,6 @@ userSchema.pre('save', function(next){
        return next();
    }
 });
-
-
 
 // model methods
 userSchema.methods.authenticate = function (password) {

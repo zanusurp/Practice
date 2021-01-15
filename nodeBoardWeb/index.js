@@ -48,6 +48,7 @@ app.use('/',require('./routes/home')); // home , about
 app.use('/posts',util.getPostQueryString,require('./routes/posts')); // posts paging 옵션 추가
 app.use('/users', require('./routes/users')); //users
 app.use('/comments', util.getPostQueryString, require('./routes/comments'));
+app.use('/files', require('./routes/files')); //파일 
 
 //port set
 var port = 3000;

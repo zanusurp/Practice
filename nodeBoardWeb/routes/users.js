@@ -4,15 +4,15 @@ var router = express.Router();
 var User = require('../models/User');
 var util = require('../util');
 
-//Index
-router.get('/', function(req,res){
-    User.find({})
-        .sort({username:1})
-        .exec(function(err,users){
-            if(err) return res.json(err);
-            res.render('users/index', {users:users});
-        });
-});
+// //Index admin 일시 가능하도록 
+// router.get('/', function(req,res){
+//     User.find({})
+//         .sort({username:1})
+//         .exec(function(err,users){
+//             if(err) return res.json(err);
+//             res.render('users/index', {users:users});
+//         });
+// });
 //New
 router.get('/new', function(req, res){
     var user = req.flash('user')[0] || {};
@@ -27,7 +27,7 @@ router.post('/',function(req,res){
             req.flash('errors',util.parseError(err));
             return res.redirect('/users/new');
         }
-        res.redirect('/users');
+        res.redirect('/');
     });
 });
 

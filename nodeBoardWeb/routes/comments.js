@@ -13,23 +13,24 @@ router.post('/', util.isLoggedin, checkPostId, function(req,res){
     Comment.create(req.body, function(err, comment){
         if(err){
             req.flash('commentForm', {_id:null, form:req.body});
-            req.flash('commentError', {_id:null, errors:util.parseError(err)});
+            req.flash('commentError', { _id:null, parentComment:req.body.parentComment, errors:util.parseError(err) });
         }
         return res.redirect('/posts/'+post._id+res.locals.getPostQueryString());
     });
 });
 //댓글 수정 
-router.put('/:id', util.isLoggedin, checkPermission, checkPostId, function(req,res){
+router.put('/:id', util.isLoggedin, checkPermission, checkPostId, function(req, res){
     var post = res.locals.post;
+  
     req.body.updatedAt = Date.now();
     Comment.findOneAndUpdate({_id:req.params.id}, req.body, {runValidators:true}, function(err, comment){
-        if(err){
-            req.flash('commentForm',{_id:req.params.id, form:req.body});
-            req.flash('commentError',{_id:req.params.id, errors:util.parseError(err)});
-        }
-        return res.redirect('/posts/'+post._id+res.locals.getPostQueryString());
+      if(err){
+        req.flash('commentForm', { _id:req.params.id, form:req.body });
+        req.flash('commentError', { _id:req.params.id, parentComment:req.body.parentComment, errors:util.parseError(err) });
+      }
+      return res.redirect('/posts/'+post._id+res.locals.getPostQueryString());
     });
-});
+  });
 
 //삭제
 router.delete('/:id', util.isLoggedin, checkPermission, checkPostId, function(req,res){
@@ -50,11 +51,11 @@ router.delete('/:id', util.isLoggedin, checkPermission, checkPostId, function(re
 module.exports = router;
 
 
-//허가
+//자성자 확인 
 function checkPermission(req, res, next){
     Comment.findOne({_id:req.params.id}, function(err, comment){
         if(err) return res.json(err);
-        if(comment.author != req.user.id) return util.noPermission(req,res);
+        if(comment.author != req.user.id) return util.noPermission(req,res);//댓글 작성자 확인
 
         next();
     });
