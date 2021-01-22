@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded',()=>{
             img: 'images/hotdog.png'
           }
     ];
-    cardArray.sort(()=>0.5 - Math.random());
-
+    cardArray.sort(()=>0.2 - Math.random());
+    console.log(cardArray.sort(()=>0.2 - Math.random()));//답보고 하자
     const grid = document.querySelector('.grid'); //grid 잡
     const resultDisplay = document.querySelector('#result'); //점수판 잡
     let cardsChosen = [];
