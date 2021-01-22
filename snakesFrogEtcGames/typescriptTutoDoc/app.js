@@ -74,3 +74,26 @@ if (person3.role === Role.ADMIN) {
     console.log('role is ADMIN');
 }
 //ANY TYPE 애니 타입  : 특정 한 게 없다 
+//타입 여러개 가능하게 설정
+function combine(input1, input2, resultConversion) {
+    //const result = input1 + input2; //에러남
+    var result;
+    if (typeof input1 === 'number' && typeof input2 === 'number' || resultConversion === 'as-number') {
+        result = +input1 + +input2; //앞에 플러스를 붙임으로서 문자도 숫자화 하는 것임 
+    }
+    else {
+        result = input1.toString() + input2.toString();
+    }
+    return result;
+    // if(resultConversion === 'as-number'){ //주석 먹이고 맨 위에 or로 넣으면 됨
+    //     return parseFloat(result);
+    // }else{
+    //     return result.toString();
+    // }
+}
+var conbinedAges = combine(30, 26, 'as-number');
+console.log(conbinedAges);
+var conbinedStringsAges = combine('30', '26', 'as-number');
+console.log(conbinedStringsAges);
+var conbimedNames = combine('Max', 'Anna', 'as-text');
+console.log(conbimedNames);
