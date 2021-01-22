@@ -85,7 +85,9 @@ if(person3.role===Role.ADMIN){
 }
 //ANY TYPE 애니 타입  : 특정 한 게 없다 
 //타입 여러개 가능하게 설정
-function combine ( input1:number | string, input2: number | string, resultConversion:'as-number'|'as-text'){ //2가지 가능케 함
+type Combinable = number | string; //number | string대신 쓰게 됨
+type TextOrNumber = 'as-number' | 'as-text';
+function combine ( input1:Combinable, input2: Combinable, resultConversion:TextOrNumber){ //2가지 가능케 함
     //const result = input1 + input2; //에러남
     let result;
     if(typeof input1 ==='number' && typeof input2 ==='number' || resultConversion ==='as-number'){
@@ -110,9 +112,49 @@ console.log(conbinedStringsAges);
 const conbimedNames = combine('Max','Anna','as-text');
 console.log(conbimedNames);
 
+//void
+function add2(n1:number, n2:number){
+    return n1 + n2;
+}
+function printREsult(num:Number):void{ //  return 들어가면 타입을 undefined으로 가능
+    console.log('Result : '+ num); //보이드 이기에 리턴할 이유가 없다 
+}
+printREsult(add2(5,12));
+let combineValues;
+combineValues =add2; //함수를넣어버릴 수있따 
+console.log(combineValues(2,3));
 
+let combineValues2 : Function; //함수만 들어가도록 명시
 
+let combineValues3 : () => number; //함수화
+//위 add2를 쓰고 싶다면
+let combineValues4 : (a:number, b:number) => number;
+combineValues4 = add2;
+console.log(combineValues4(2,3));
 
+function addAndHandle(n1:number, n2:number, cb:(num:number) => void){ //마지막 함수화
+    const result = n1 + n2;
+    cb(result);
+}
+addAndHandle(10,20, (result)=>{
+    console.log(result);
+    return result;
+});
 
+//unknown type 언노운 타입
+let userInput: unknown; //언노운 타입  any와 비슷해 보이지만 다름
+let userName1: string;
+userInput = 5;
+userInput = 'max';
+//userName1 = userInput; //안됨 근데 unknow이 아닌 any면 됨
+if( typeof userInput ==='string') {//규정을 명확하게 할 수 있음 
+    userName1 = userInput;
+}
 
+//never type  네버 타입
+function generateError(message:string, code:number):never{//never를 보냄
+    throw {message:message , errorCode:code};
+}
 
+const result2 = generateError('An Error occurred',500);
+console.log(result2); //이렇게 해서 타입을 보면uncaught

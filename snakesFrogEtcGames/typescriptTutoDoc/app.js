@@ -73,8 +73,6 @@ var person3 = {
 if (person3.role === Role.ADMIN) {
     console.log('role is ADMIN');
 }
-//ANY TYPE 애니 타입  : 특정 한 게 없다 
-//타입 여러개 가능하게 설정
 function combine(input1, input2, resultConversion) {
     //const result = input1 + input2; //에러남
     var result;
@@ -97,3 +95,43 @@ var conbinedStringsAges = combine('30', '26', 'as-number');
 console.log(conbinedStringsAges);
 var conbimedNames = combine('Max', 'Anna', 'as-text');
 console.log(conbimedNames);
+//void
+function add2(n1, n2) {
+    return n1 + n2;
+}
+function printREsult(num) {
+    console.log('Result : ' + num); //보이드 이기에 리턴할 이유가 없다 
+}
+printREsult(add2(5, 12));
+var combineValues;
+combineValues = add2; //함수를넣어버릴 수있따 
+console.log(combineValues(2, 3));
+var combineValues2; //함수만 들어가도록 명시
+var combineValues3; //함수화
+//위 add2를 쓰고 싶다면
+var combineValues4;
+combineValues4 = add2;
+console.log(combineValues4(2, 3));
+function addAndHandle(n1, n2, cb) {
+    var result = n1 + n2;
+    cb(result);
+}
+addAndHandle(10, 20, function (result) {
+    console.log(result);
+    return result;
+});
+//unknown type 언노운 타입
+var userInput; //언노운 타입  any와 비슷해 보이지만 다름
+var userName1;
+userInput = 5;
+userInput = 'max';
+//userName1 = userInput; //안됨 근데 unknow이 아닌 any면 됨
+if (typeof userInput === 'string') { //규정을 명확하게 할 수 있음 
+    userName1 = userInput;
+}
+//never type  네버 타입
+function generateError(message, code) {
+    throw { message: message, errorCode: code };
+}
+var result2 = generateError('An Error occurred', 500);
+console.log(result2); //이렇게 해서 타입을 보면uncaught
