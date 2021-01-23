@@ -160,7 +160,16 @@ const result2 = generateError('An Error occurred',500);
 console.log(result2); //이렇게 해서 타입을 보면uncaught
 
 //실시간 로그 tsc app.ts -w   나올 떈 컨트롤 c
-//tsc --init  전체 폴더 전체적으로ts파일 컴파일 뭐가됐듯
+//tsc --init  전체 폴더 한번 하고 그뒤로 tsc하면 전체적으로ts파일 컴파일 뭐가됐듯 컴파일 진행
+let age2:number;
+age2 = 300;
+//버튼 불르기
+const button = document.querySelector('button')!;
 
+button.addEventListener('click', () =>{
+    console.log('clicked!! ');
+});
 
+//Lib
+//SourceMap tsconfig에 이쓴데 이걸 해제 시켜주면 브라우저 디버그에서도 타잎스크립 실시간 가능하게 해줌 
 

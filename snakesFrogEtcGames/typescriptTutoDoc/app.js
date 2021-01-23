@@ -1,3 +1,4 @@
+"use strict";
 //typescript Academind
 function add(n1, n2, showResult, phrase) {
     if (typeof n1 !== 'number' && typeof n2 !== 'number') {
@@ -135,3 +136,14 @@ function generateError(message, code) {
 }
 var result2 = generateError('An Error occurred', 500);
 console.log(result2); //이렇게 해서 타입을 보면uncaught
+//실시간 로그 tsc app.ts -w   나올 떈 컨트롤 c
+//tsc --init  전체 폴더 한번 하고 그뒤로 tsc하면 전체적으로ts파일 컴파일 뭐가됐듯 컴파일 진행
+var age2;
+age2 = 300;
+//버튼 불르기
+var button = document.querySelector('button');
+button.addEventListener('click', function () {
+    console.log('clicked!! ');
+});
+//Lib
+//# sourceMappingURL=app.js.map
