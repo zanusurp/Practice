@@ -66,5 +66,8 @@
     /* Advanced Options */
     "skipLibCheck": true,                     /* Skip type checking of declaration files. */
     "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
-  }
+  },
+  "exclude" : [ //이렇게 적으면 제외 하는 파일 설정 가능 
+    "analytics.ts"
+  ]
 }

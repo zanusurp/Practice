@@ -159,5 +159,8 @@ function generateError(message:string, code:number):never{//never를 보냄
 const result2 = generateError('An Error occurred',500);
 console.log(result2); //이렇게 해서 타입을 보면uncaught
 
-//실시간 로그 tsc app.ts -w
+//실시간 로그 tsc app.ts -w   나올 떈 컨트롤 c
+//tsc --init  전체 폴더 전체적으로ts파일 컴파일 뭐가됐듯
+
+
 
