@@ -278,9 +278,177 @@ print("{0:+,}".format(10000000)) #3자리마다 콤마 부호 붙이면 됨
 
 #특정 소수자리까지
 print("{0:.2f}".format(5/3)) #2쨰까지
-score_file = open("python-prac/score.txt","w",encoding="utf8")
+score_file = open("python-prac/score.txt","w",encoding="utf8")#w대신 a하면 추가및생성
 print("수학:0", file=score_file)
 print("영어:50", file=score_file)
 score_file.close()
 
+socre_file2 = open("python-prac/score.txt","r",encoding="utf8")
+print(socre_file2.read())
 
+while True:
+    line = socre_file2.readline()
+    if not line:
+        break
+    print(line)
+socre_file2.close()
+
+import pickle
+profile_file = open("python-prac/profile.pickle","wb")
+prifile = {"이름":"qkraudtn","나이":30,"hobbies":["c","a"]}
+print(prifile)
+pickle.dump(prifile, profile_file)
+profile_file.close()
+
+profile_file2 = open("python-prac/profile.pickle","rb")
+profile2= pickle.load(profile_file2)
+print(profile2)
+profile_file2.close()
+
+#class
+ #클래스
+ #일반유닛
+class Unit:
+    def __init__(self,name,hp, speed): #생성자
+        self.name = name
+        self.hp = hp
+        self.speed = speed
+        print("{0} 유닛이 생성 되었습니다".format(name))
+
+    def move(self, location):
+        print("지상 유닛 이동")
+        print("{0} : {1}으로 ㅇ동합니다 속도 : {2}".format(self.name, location, self.speed))
+        # self.damage = damage
+        # print("{0} 유닛이 생성 되었습니다".format(self.name))
+        # print("체력이{0} 데미지가 {1}".format(self.hp, self.damage))
+    def damaged(self, damage):
+        print("{0} : {1} 피해를 입었습니다".format(self.name, damage))
+        self.hp -= damage
+        print("{0} : 현재 체력은 {1}입니다".format(self.name,self.hp))
+        if self.hp <= 0:
+            print("{0}:파괴 되었습니다".format(self.name))
+
+
+#외부에서 변수를 추가해서 ㅅ용하기
+# wraith1 = Unit("레이스",80,20)
+# wraith1.clocking = True
+# if wraith1.clocking ==True:
+#     print("{0}는 현재 클롱킹 상태 입니다".format(wraith1.name))
+
+#공격 유닛 위에 유닛 상속 받게 함 
+class AttackUnit(Unit):
+    def __init__(self,name,hp, speed, damage): #생성자
+        Unit.__init__(self, name, hp, speed)
+        self.damage = damage
+    
+    def attack(self, location):
+        print("{0}:{1}으로 적군 공격 합니다 공격력 {2}"
+        .format(self.name, location, self.damage))
+
+
+firebat1 = AttackUnit("파뱃",50,16,2)
+#날 수 있는 기능을 가진 클래스
+class Flyable:
+    def __init__(self, flying_speed):
+        self.flying_speed = flying_speed
+    def fly(self, name, locaiton):
+        print("{0} : {1}방향으로 날아갑니다 속도 : {2}".format(name, locaiton, self.flying_speed))
+
+
+#공중 공격 유닛 클래스
+class FlyableAttackUnit(AttackUnit, Flyable):
+    def __init__(self, name, hp, damage, flying_speed):
+        AttackUnit.__init__(self, name, hp,0, damage) #지상아니니까 0 
+        Flyable.__init__(self, flying_speed)
+    def move(self, location):
+        print("공주 유닛 이동")
+        self.fly(self.name, location)
+    
+
+#발키리 한버에 14발 미사일 
+valkyrie = FlyableAttackUnit("발키리", 200, 6, 5)
+valkyrie.fly(valkyrie.name,"3시")
+
+#오버라이딩
+#벌쳐 
+vulture = AttackUnit("벌쳐", 80, 10, 20)
+#배틀 크루저
+battlecruiser = FlyableAttackUnit("배틀크루저",450,30,3)
+
+vulture.move("11시")
+battlecruiser.fly(battlecruiser.name,"9시")
+
+battlecruiser.move("9시")
+
+#pass
+class BuildingUnit(Unit):
+    def __init__(self, name, hp, location):
+       super().__init__(name, hp, 0)#Unit.__init__(self, name, hp, 0) #슈퍼할시 self 안써도 됨 다중 상속시 문제됨
+       self.location = location
+
+#서플ㄹㅏ이디폿 : 건물
+supply_depot = BuildingUnit("서플라이 디폿",500, "9시")
+
+def game_start():
+    print("알림] 새로운 게임을 시작 합니다")
+def game_over():
+    pass
+
+game_start()
+game_over()
+
+
+class Marine(AttackUnit):
+    def __init__(self):
+        AttackUnit.__init__(self, "마린", 40, 1, 5)
+    def stimPack(self):
+        if self.hp > 10:
+            self.hp -= 10
+            print("{0} : 스팀팩을 사용 합니다".format(self.name))
+        else:
+            print("{0} : 체력이 부족하ㅕㅇ 사용 하지 않습니다".format(self.name))
+
+class Tank(AttackUnit): #탱크 지상 고정 시즈모드
+    seize_develpoed = False
+    def __init__(self):
+        AttackUnit.__init__(self, "탱크",150, 1, 35)
+        self.seize_mode = False
+    def set_seize_mode(self):
+        if Tank.seize_develpoed == False:
+            return
+        if self.seize_mode == False:
+            print("{0} : 시즈모드로 전환 합니다 . ".format(self.name))
+            self.damage *= 2
+            self.seize_mode = True
+        else:
+            print("{0} : 시즈모드로 해제 합니다 . ".format(self.name))
+            self.damage /= 2
+            self.seize_mode = False
+
+#Wraith
+class Wraith(FlyableAttackUnit):
+    def __init__(self):
+        FlyableAttackUnit.__init__(self,"레이스", 80, 20, 5)
+        self.clocked = False
+
+    def clocking(self):
+        if self.clocked == True : 
+            print("{0} : 클로킹 모드를 해제합니다".format(self.name))
+            self.clocked = False
+        else:
+            print("{0} : 클로킹 모드를 설정합니다".format(self.name))
+            self.clocked = True
+
+try:
+    print("나누기")
+    num1 = int(input("첫번재 숫자 입력하세요 : "))
+    num2 = int(input("두번재 숫자 입력하세요 : "))
+    print("{0} / {1} = {2}".format(num1, num2, int(num1/num2)))
+except ValueError:
+    print("자못된 값으 ㄹ입력")
+except ZeroDivisionError as err:
+    print(err)
+
+from bs4 import BeautifulSoup
+soup = BeautifulSoup("https://www.naver.com")
+print(soup.prettify())
