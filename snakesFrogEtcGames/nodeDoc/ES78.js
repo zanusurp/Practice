@@ -49,7 +49,25 @@ const greeting = (name) =>{
     console.log(templateString);
 }
 greeting('Josh');
+const [first, second, third] = array;
+console.log(first, third);
 
+const object1 = {
+    channelName:'Javascript Mster',
+    views : 15000
+}
+console.log(object1.channelName);
+const {channelName, views} = object1;
+console.log(channelName);
 
+//rest operater
+const add1 = (a,b,c) =>console.log([a,b,c].reduce((a,b)=> a+b, 0)); //c가 없다면 두번쨰로 있다면 첫번째로 그런 것임 
+const add2 = (...numbers) => console.log(numbers.reduce((a,b)=>a+b,0)); //상관 없어짐 ...라는 것으로 몇개가 들어가든 무상관
+add1(1,2,3);
+add2(1,2,3,5,5,7,3,32,4,2);
 
+//spread operator
+const array4 = [1,2,3];
+console.log(array4[0], array4[1],array4[2]);
+console.log(...array4); //
 
