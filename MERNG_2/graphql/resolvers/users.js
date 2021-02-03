@@ -31,22 +31,37 @@ module.exports = {
     Mutation:{
         async login(_, {username, password}){
             const  { errors, valid } = validateLoginInput(username, password);
-            const user = await User.findOne({username});
-
+            
+            if (!valid) {
+                throw new UserInputError('Errors', { errors });
+              }
+            const user = await User.findOne({ username });
+            console.log(user.username);
             if(!user){
                 errors.general = 'User not found';
                 throw new UserInputError('User not found', { errors });
             }
             
-            const match = await bcrypt.compare(password, user.password);
-            if(!match){ //암호 안 ㅁ자음
+            console.log('방금 작성한 비밀번호 : '+password);
+            console.log('사용자에 저장된 비밀번호 : '+user.password);
+            // console.log((user.password).length);
+            // var salt = bcrypt.genSaltSync(12);
+            // var hash = bcrypt.hash(password,salt);
+            // console.log((await hash).toString());
+            var hash2 = bcrypt.hash(password,12);
+            console.log((await hash2).toString());
+            // //console.log('사용자 젖아된 비밀번호 해석: '+bcrypt.hashSync(user.password,"some very secret key"));
+            const match = await bcrypt.compare(password,user.password);
+            
+            console.log('비밀번호와 매칭이 되는가'+match);
+            if(!match){ //암호 확읹
                 errors.general = 'Wrong Credential';
                 throw new UserInputError('Wrong Credential', { errors });
             }
 
             const token = generateToken(user);
             return {
-                ...user.doc,
+                ...user._doc,
                 id:user._id,
                 token
 
@@ -63,7 +78,8 @@ module.exports = {
                     throw new UserInputError('Errors', {errors});
                 }
                 // Make sure user doesnt already exist
-                const user = User.findOne({ username });
+                const user = await User.findOne({ username });
+                
                 if(user){
                     throw new UserInputError('Username is taken',{
                         errors:{
@@ -84,7 +100,7 @@ module.exports = {
 
                 const token = generateToken(res); //secret key암호로 넣어주고 
                 return {
-                    ...res.doc,
+                    ...res._doc,
                     id:res._id,
                     token
 
