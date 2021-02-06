@@ -1,4 +1,4 @@
-const { AuthenticationError } = require('apollo-server');
+const { UserInputError,AuthenticationError } = require('apollo-server');
 
 const Post = require('../../models/Post');
 const checkAuth = require('../../util/check-auth');
@@ -41,6 +41,9 @@ module.exports = {
                 createdAt:new Date().toISOString()
             });
             const post = newPost.save();
+            context.pubsub.publish('NEW_POST',{ //하단 subscribe
+                newPost: post
+            })
             return post;
         },
         async deletePost(_,{ postId }, context){
@@ -57,6 +60,35 @@ module.exports = {
             }catch(err){
                 throw new Error(err);
             }
+        },
+        //
+        async likePost(_,{ postId }, context){
+            const { username } = checkAuth(context);
+            
+            const post = await Post.findById(postId);
+            if(post){
+                if(post.likes.find(like => like.username === username)){
+                    //Post already likes, unlike it
+                    post.likes = post.likes.filter(like => like.username !== username); // 이렇게 하는 것으로 좋아요 취소
+                    
+                }else{
+                    //not liked, so change it like 
+                    post.likes.push({
+                        username,
+                        createdAt: new Date().toISOString()
+                    });
+                }
+                await post.save();
+                return post;
+            }else throw new UserInputError('Post not Found');
+
+            
+        }
+    },
+    //새로운 글이 나오면 알리는 표시 같은 것 
+    Subscription:{
+        newPost:{
+            subscribe:(_,__,{ pubsub }) => pubsub.asyncIterator('NEW_POST')//파라미터 필요 없는건 _ __로 막음
         }
     }
 };

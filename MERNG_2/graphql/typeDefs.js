@@ -7,7 +7,9 @@ module.exports = gql`
         createdAt:String!
         username:String!
         comments:[Comment]! #안에 !하면 최소 하나 있어라 이거임 그건 아니기 떄문에 밖에
-        likes:[Like]!
+        likes:[Like]! #
+        likeCount:Int!
+        commentCount: Int!
 
     }
     type Comment{
@@ -49,5 +51,8 @@ module.exports = gql`
         deleteComment(postId:ID!, commentId:ID!):Post!
         likePost(postId:ID!):Post!
         
+    }
+    type Subscription{
+        newPost: Post! #새로운 게 나오면 사람들이 알게 함 
     }
 `;
