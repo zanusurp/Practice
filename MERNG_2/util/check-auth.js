@@ -17,5 +17,9 @@ module.exports = (context) => {
                 throw new AuthenticationError('Invalid/Expired token');
             }
         }
+        //토큰 없다면
+        throw new Error('Athentication token must be \'Bearer [token] ');
     }
+    //인증헤더가 없다면 
+    throw new Error('Athentication header  must be provided ');
 }
