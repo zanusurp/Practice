@@ -34,13 +34,18 @@ module.exports = {
         async createPost(_,{ body }, context){//최상단 index js에서 req 오브젝트를context로 보내어 req 제어가능
             const user = checkAuth(context);
             console.log(user); 
+
+            if(args.body.trim() ===''){//글이 비을 수 없음 
+                throw new Error('Post body must not be empty');
+            }
+
             const newPost = new Post({
                 body,
                 user:user.id,
                 username:user.username, //모델에서 확인
                 createdAt:new Date().toISOString()
             });
-            const post = newPost.save();
+            const post = await newPost.save();
             context.pubsub.publish('NEW_POST',{ //하단 subscribe
                 newPost: post
             })
