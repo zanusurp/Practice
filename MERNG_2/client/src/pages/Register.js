@@ -1,11 +1,13 @@
-import React,{useState} from 'react'
+import React,{useContext,useState} from 'react'
 import { Form, Button } from 'semantic-ui-react';
 import { useMutation } from '@apollo/client';
 import gql from 'graphql-tag';
 
+import { AuthContext } from '../context/auth';
 import { useForm } from '../util/hooks';
 
 function Register(props) {
+    const context = useContext(AuthContext);
     const [errors, setErrors] = useState({}); //emptyh
 
    
@@ -18,13 +20,13 @@ function Register(props) {
 
   
     const [addUser, { loading }] = useMutation(REGISTER_USER,{
-        update(_, result){ //1번쨰 파라는 proxy인데 필요 없으므로 _  
-            console.log(result);
+        update(_, {data: { register: userData}}){ //1번쨰 파라는 proxy인데 필요 없으므로 _  
+            console.log(userData);
             props.history.push('/');
         },
         onError(err){
-            console.log(err.graphQLErrors[0].extensions.extensions.errors);
-            setErrors(err.graphQLErrors[0].extensions.extensions.errors);
+            console.log(err.graphQLErrors[0].extensions.exceptions.errors);
+            setErrors(err.graphQLErrors[0].extensions.exceptions.errors);
         },
         variables:values
     });

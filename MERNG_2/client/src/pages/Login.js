@@ -1,11 +1,13 @@
-import React,{useState} from 'react'
+import React,{useContext,useState} from 'react'
 import { Form, Button } from 'semantic-ui-react';
 import { useMutation } from '@apollo/client';
 import gql from 'graphql-tag';
 
+import { AuthContext } from '../context/auth';
 import { useForm } from '../util/hooks';
 
 function Login(props) {
+    const context = useContext(AuthContext);
     const [errors, setErrors] = useState({}); //emptyh
     
     const { onChange, onSubmit, values } = useForm(loginUserCallback, {
@@ -15,8 +17,9 @@ function Login(props) {
     });
     
     const [loginUser, { loading }] = useMutation(LOGIN_USER,{
-        update(_, result){ //1번쨰 파라는 proxy인데 필요 없으므로 _  
-            console.log(result);
+        update(_, /*result*/ {data: {login: userData}}){ //1번쨰 파라는 proxy인데 필요 없으므로 _  
+            console.log(/*result.data.login*/userData);
+            context.login(userData);
             props.history.push('/');
         },
         onError(err){
