@@ -31,6 +31,8 @@ app.use(methodOverride('_method'));
 
 //routes
 app.use('/', require('./routes/home'));
+app.use('/posts', require('./routes/posts'));
+app.use('/users', require('./routes/users'));
 
 //port setting
 const port = process.env.PORT || 3000;
