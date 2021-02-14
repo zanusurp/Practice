@@ -36,3 +36,34 @@ $(function(){
     convertDate();
     convertDateTime();
 });
+$(function(){
+    var search = window.location.search;
+    var params = {};
+
+    if(search){
+        $.each(search.slice(1).split('&'), function(index, param){
+            var index  = param.indexOf('=');
+            if(index>0){
+                var key = param.slice(0, index);
+                var value = param.slice(index+1);
+
+                if(!params[key]) params[key] = value;
+            }
+        });
+    }
+    if(params.searchText && params.searchtText.length>=3){
+        $('[data-search-highlight]').each(function(index, element){
+            var $element = $(element);
+            var searchHighLight = $element.data('search-highlight');
+            var index = params.searchType.indexOf(searchHighLight);
+
+            if(index>=0){
+                var decodedSearchText = params.searchText.replace(/\+/g,' ');
+                decodedSearchText = decodeURI(decodedSearchText);
+
+                var regex = new RegExp(`(${decodedSearchText})`, 'ig');
+                $element.html($element.html().replace(regex,'<span class="highlighted">$1</span>'));
+            }
+        });
+    }
+});

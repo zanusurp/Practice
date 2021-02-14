@@ -6,17 +6,17 @@ const passport = require('../config/passport');
 
 
 //Home
-router.get('/', function(req,res){
+router.get('/', function(req, res){
     res.render('home/welcome');
-});
-router.get('/about', function(req,res){
+  });
+  router.get('/about', function(req, res){
     res.render('home/about');
-});
+  });
 
 //login
 router.get('/login', function(req,res){
-    const username = req.flash('username')[0];
-    const errors = req.flash('errors')[0] || {};
+    let username = req.flash('username')[0];
+    let errors = req.flash('errors')[0] || {};
     res.render('home/login', {
         username:username,
         errors:errors
@@ -26,8 +26,8 @@ router.get('/login', function(req,res){
 //post login
 router.post('/login',
     function(req,res,next){
-        const errors = {};
-        const isValid = true;
+        let errors = {};
+        let isValid = true;
 
         if(!req.body.username){
             isValid = false;
@@ -41,7 +41,7 @@ router.post('/login',
             next();
         }
         else{
-            req.flash('errors',errros);
+            req.flash('errors',errors);
             res.redirect('/login');
         }
     },
