@@ -1,19 +1,20 @@
-var express = require('express');
-var mongoose = require('mongoose');
-var bodyParser = require('body-parser');
-var methodOverride = require('method-override');
-var flash = require('connect-flash');
-var session = require('express-session');
-var passport = require('./config/passport');
-var util = require('./util');
-var app = express();
+const kk = require('./kk');
+const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+const methodOverride = require('method-override');
+const flash = require('connect-flash');
+const session = require('express-session');
+const passport = require('./config/passport');
+const util = require('./util');
+const app = express();
 
 // DB setting
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
-mongoose.connect(process.env.MONGO_DB);
+mongoose.connect(kk.mong);
 var db = mongoose.connection;
 db.once('open', function(){
   console.log('DB connected');
@@ -29,7 +30,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(methodOverride('_method'));
 app.use(flash());
-app.use(session({secret:'MySecret', resave:true, saveUninitialized:true}));
+app.use(session({secret:kk.SECRET, resave:true, saveUninitialized:true}));
 
 // Passport
 app.use(passport.initialize());
@@ -49,7 +50,7 @@ app.use('/users', require('./routes/users'));
 app.use('/comments', util.getPostQueryString, require('./routes/comments'));
 
 // Port setting
-var port = 3000;
+const port = 3000;
 app.listen(port, function(){
   console.log('server on! http://localhost:'+port);
 });

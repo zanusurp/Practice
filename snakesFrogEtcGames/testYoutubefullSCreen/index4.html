@@ -1,0 +1,232 @@
+<!-- 참나 매번 바뀌냐 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ box-sizing: border-box; 
+            font-family: 'Nanum Gothic', sans-serif !important;
+        }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99 !important;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+.container{
+    padding-top: 1vw !important;
+    
+}
+.opa{
+    margin-bottom: 2vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: royalblue !important;
+    
+}
+.articles{
+    background-color: rgba(34, 34, 34, 0.3);
+    border-radius: 0.2vw;
+    text-align: center !important;
+    margin: 1vw;
+    display: inline-block !important;
+    color: rgb(250, 214, 114);
+    
+    
+}
+.fixedmenu{
+    position: absolute;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    padding: 2vw;
+    background-color: salmon;
+    transform: rotate(45deg);
+}
+.item *{
+    color: rgb(0, 81, 255) !important;
+}
+</style>
+
+
+
+<!-- 구글 폰트-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap" rel="stylesheet">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="fixedmenu">
+
+    </div>
+    <div class="video-background">
+        <div class="video-foreground">
+          <iframe src="https://www.youtube.com/embed/ARTLckN9e7I?&playlist=ARTLckN9e7I&mute=1&autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="container" style="color: rgb(71, 181, 255);">
+        <div class="jumbotron">
+          <h1 style="color: royalblue !important;">웹 개발 지원자</h1><br>      
+          <pr>네트워크과 3D 디자인 실무 경험을 갖고 있고 웹 개발 분야로 나가고자 합니다.<br>
+          nodejs, react, winform, spring 등으로 작업을 해보았습니다.   <br>
+          윈도우 외에 우분투를 사용하여 간단한 인프라 세팅이 가능합니다.</pr>
+          
+        </div>
+        
+    </div>
+    <div class="container" style="margin: 0 auto !important;">
+        <div class="col-sm-12 opa">
+            <h4>프로그래밍 언어</h4>
+        </div>
+        <div class="col-sm-2 articles" data-toggle="modal" data-target="#myModal">
+            <h2>JAVA</h2>
+        </div>
+        <div class="col-sm-2 articles">
+            <h2>C#</h2>
+        </div>
+        <div class="col-sm-2 articles">
+            <h2>JS</h2>
+        </div>
+        
+        <div class="col-sm-2 articles">
+            <h2>C/C++</h2>
+        </div>
+        <div class="col-sm-2 articles">
+            <h2>PYTHON</h2>
+        </div>
+        
+        <div class="col-sm-12 opa">
+            <h4>DB 프로그램</h4>
+        </div>
+        <div class="col-sm-2 articles">
+            <h2>ORACLE</h2>
+        </div>
+        <div class="col-sm-2 articles">
+            <h3>MYSQL/MARIA</h3>
+        </div>
+        <div class="col-sm-2 articles">
+            <h2>MSSQL</h2>
+        </div>
+        
+        <div class="col-sm-2 articles">
+            <h2>MONGO</h2>
+        </div>
+        <div class="col-sm-2 articles">
+            <h2>GRAPHQL</h2>
+        </div>
+        <div class="col-sm-12 opa">
+            <h4>그외 사용</h4>
+        </div>
+        <div class="col-sm-2 articles">
+            <h2>Adobe/Maya</h2>
+        </div>
+        <div class="col-sm-2 articles">
+            <h2>UBUNTU</h2>
+        </div>
+        <div class="col-sm-2 articles">
+            <h2>Arduino</h2>
+        </div>
+        
+        <div class="col-sm-2 articles">
+            <h2>DOCKER</h2>
+        </div>
+        <div class="col-sm-2 articles">
+            <h2>WireShark</h2>
+        </div>
+
+    </div>
+    
+    
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">프로그래밍 언어</h4>
+        </div>
+        <div class="modal-body">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+              
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="pic/카카오 API사용도서검색.png" alt="윈폼">
+                    <div class="carousel-caption">
+                      <h3>도서 검색</h3>
+                      <p>카카오 API이용하는 도서 검색 윈폼</p>
+                    </div>
+                  </div>
+              
+                  <div class="item">
+                    <img src="pic/윈폼 앨범 검색 및 수정.png" alt="윈폼">
+                    <div class="carousel-caption">
+                      <h3>앨범 검색</h3>
+                      <p>MSSQL에 저장된 앨범 검색 윈폼</p>
+                    </div>
+                  </div>
+              
+                  <div class="item">
+                    <img src="pic/원격 키보드 마우스 데이터 보내기.png" alt="윈폼">
+                    <div class="carousel-caption">
+                      <h3>원격 데이터 보내기</h3>
+                      <p>윈폼 원격 데이터 보내기</p>
+                    </div>
+                  </div>
+              
+                  <div class="item">
+                    <img src="pic/색깔로 나타내는 온도.png" alt="아두이노 ">
+                    <div class="carousel-caption">
+                      <h3>아두이노</h3>
+                      <p>온도에 따른 색깔 변화</p>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>

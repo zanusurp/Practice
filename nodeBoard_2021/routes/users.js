@@ -1,8 +1,8 @@
 //route users
-const express = require('express');
-const router = express.Router();
-const User = require('../model/User');
-const util  =require('../util');
+var express = require('express');
+var router = express.Router();
+var User = require('../model/User');
+var util  =require('../util');
 
 //유저 목록 어드민용
 router.get('/', function(req,res){
@@ -27,7 +27,7 @@ router.post('/', function(req,res){
             req.flash('errors',util.parseError(err));
             return res.redirect('/usesr/new');
         }
-        res.redirect('/users');
+        res.redirect('/');
     });
 });
 
