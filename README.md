@@ -1,5 +1,6 @@
 # Practice
-개인적으로 관심 갖고 배우고 싶은 것들을 위주로 연습하고 올려두었습니다. 
+<hr>
+개인적으로 관심 갖고 배우고 싶은 것들을 위주로 연습하고 올려두었습니다. <br>
 Codes, in this repository, are about what I've practiced individually with interest by following uploaders' codes on internet blogs.
 
 I have no charge on the codes and have no enough knowledge to give any advice to others.
