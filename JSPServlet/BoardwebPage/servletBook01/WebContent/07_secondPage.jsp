@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -7,6 +8,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+<c:out value="helo!!"></c:out>
+
 두번째 페이지 <br>
 <hr>
 페이지 속성: <%= pageContext.getAttribute("name") %> <br>
