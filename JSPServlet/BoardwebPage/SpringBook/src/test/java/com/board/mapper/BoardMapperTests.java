@@ -45,4 +45,34 @@ public class BoardMapperTests {
 		log.info(board);
 		log.info("selctkey====================================================================");
 	}
+	@Test
+	public void testRead() {
+		log.info("read====================================================================");
+		BoardVO board = mapper.read(2L);
+		
+		log.info(board);
+		log.info("read====================================================================");
+	}
+//	@Test //이미 지워진 게시판번호 
+//	public void testDelete() {
+//		log.info("delete====================================================================");
+//		log.info("delete Board : "+mapper.delete(2L));
+//		
+//		log.info("delete====================================================================");
+//	}
+	@Test
+	public void testUpdate() {
+		log.info("update====================================================================");
+		BoardVO board = new BoardVO();
+		board.setBno(3L);
+		board.setTitle("번호 3번 게시글의 제목을 수정합니다");
+		board.setContent("번호 3번 게시글으 내용을 수정합니다");
+		board.setWriter("게시글 tk");
+		
+		int count = mapper.update(board);
+		log.info("update Confirm : "+ count);
+		
+		log.info("update====================================================================");
+		
+	}
 }
