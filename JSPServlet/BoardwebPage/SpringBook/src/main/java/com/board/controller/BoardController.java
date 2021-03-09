@@ -41,16 +41,16 @@ public class BoardController {
 		rttr.addFlashAttribute("result",board.getBno());
 		return "redirect:/board/list";
 	}
-	@GetMapping("/get")
+	@GetMapping({"/get","/modify"})
 	public void get(@RequestParam("bno") Long bno, Model model) {
-		log.info("/get");
+		log.info("/get or /modify");
 		model.addAttribute("board",service.get(bno));
 	}
 	@PostMapping("/modify")
 	public String modify(BoardVO board, RedirectAttributes rttr) {
 		log.info("modified : =================" + board);
 		if(service.modify(board)) {
-			rttr.addFlashAttribute("result","success");
+			rttr.addFlashAttribute("result","modified"+board.getBno());
 		}
 		return "redirect:/board/list";
 	}
@@ -58,7 +58,7 @@ public class BoardController {
 	public String remove(@RequestParam("bno")Long bno, RedirectAttributes rttr) {
 		log.info("remove : =============="+bno);
 		if(service.remove(bno)) {
-			rttr.addFlashAttribute("result","success");
+			rttr.addFlashAttribute("result","removed"+bno);
 		}
 		return "redirect:/board/list";
 	}

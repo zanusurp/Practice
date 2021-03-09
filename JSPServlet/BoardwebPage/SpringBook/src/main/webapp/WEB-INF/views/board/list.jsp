@@ -31,10 +31,11 @@
 					<c:forEach items="${list }" var="board">
 						<tr>
 							<td><c:out value="${board.bno }"></c:out></td>
-							<td><c:out value="${board.title}"></c:out></td>
+							<td><a href="/board/get?bno=${board.bno }">${board.title}</a></td>
 							<td><c:out value="${board.writer}"></c:out></td>
 							<td> <fmt:formatDate pattern="yyyy-MM-dd" value="${board.regdate }"/> </td>
 							<td> <fmt:formatDate pattern="yyyy-MM-dd" value="${board.updateDate}"/> </td>
+							
 						</tr>
 					</c:forEach>
 				</table>
@@ -67,11 +68,14 @@
 		
 		checkModal(result);
 		
+		history.replaceState({},null,null);
+		
 		function checkModal(result){
-			
-			if(parseInt(result) >0 ){
-				$('#myModal').modal("show");	
+			if(result ==='' || history.state){
+				return;
 			}
+				
+			$('#myModal').modal("show");
 		}
 		
 		$("#regBtn").on("click", function(){
