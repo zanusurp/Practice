@@ -10,6 +10,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.baord.service.BoardService;
 import com.board.domain.BoardVO;
+import com.board.domain.Criteria;
 
 import lombok.Setter;
 import lombok.extern.log4j.Log4j;
@@ -36,9 +37,15 @@ public class BoardServiceTest {
 		
 		log.info("생선된 게시물의 번호 : " + board.getBno());
 	}
+//	@Test //페이징 없는 목록
+//	public void testGetList() {
+//		service.getList().forEach(board->log.info(board));
+//	}
+	
 	@Test
 	public void testGetList() {
-		service.getList().forEach(board->log.info(board));
+		log.info("testGetList Paging=======================================");
+		service.getList(new Criteria(2,10)).forEach(board -> log.info(board));
 	}
 	@Test
 	public void getTest() {

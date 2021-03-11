@@ -1,5 +1,7 @@
 package com.board.controller;
 
+import java.util.List;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,6 +13,9 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
+
+import com.board.domain.BoardVO;
+import com.board.domain.Criteria;
 
 import lombok.Setter;
 import lombok.extern.log4j.Log4j;
@@ -32,7 +37,7 @@ public class TestBoardController {
 	@Test
 	public void testList() throws Exception{
 		log.info(
-				mockMvc.perform(MockMvcRequestBuilders.get("/board/list"))
+				mockMvc.perform(MockMvcRequestBuilders.get("/board/list").param("pageNum", "2").param("amount", "50"))
 				.andReturn()
 				.getModelAndView()
 				.getModelMap()
@@ -73,4 +78,5 @@ public class TestBoardController {
 				).andReturn().getModelAndView().getViewName();
 		log.info(resultPage);
 	}
+
 }

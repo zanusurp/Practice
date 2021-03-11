@@ -15,6 +15,8 @@
 			<div class="panel-heading">Board Read</div>
 			<div class="panel-body">
 				<form role="form" action="/board/modify" method="POST">
+					<input type="hidden" name="pageNum" value='<c:out value="${cri.pageNum }" />' />
+					<input type="hidden" name="amount" value='<c:out value="${cri.amount}" />' />
 					<div class="form-group">
 						<label>B.No</label>
 						<input class="form-control" name="bno" value='<c:out value="${board.bno }" />'  readonly="readonly" />
@@ -44,6 +46,7 @@
 					
 					<!--  button -->
 				</form>
+				
 			</div>
 		</div>
 		
@@ -63,8 +66,15 @@ $(document).ready(function(){
 		}else if(operation === 'list'){
 			//self.location="/board/list";
 			formObj.attr("action","/board/list").attr("method","get");
-			formObj.empty();
+			var pageNumTag = $("input[name='pageNum']").clone();
+			var amountTag = $("input[name='amount']").clone();
 			
+			formObj.empty();
+			formObj.append(pageNumTag);
+			formObj.append(amountTag);
+			
+			//아래것은 작동은 하는데 잘못됐음 비슷해서 남겨두도록 함 
+			//formObj.attr("action","/board/list?pageNum="+${pageNum}+"&amount="+${amount}).attr("method","get");
 		}
 		formObj.submit();
 	});

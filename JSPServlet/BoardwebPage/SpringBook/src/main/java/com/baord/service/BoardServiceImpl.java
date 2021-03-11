@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.board.domain.BoardVO;
+import com.board.domain.Criteria;
 import com.board.mapper.BoardMapper;
 
 import lombok.AllArgsConstructor;
@@ -19,6 +20,7 @@ public class BoardServiceImpl implements BoardService{
 
 	@Setter(onMethod_=@Autowired)//4버젼 이후로 자동처리 된다고는 하지만 오류대비
 	private BoardMapper mapper;
+	
 	@Override
 	public void register(BoardVO board) {
 		log.info("==============register 글 넣기 : "+board);
@@ -44,11 +46,24 @@ public class BoardServiceImpl implements BoardService{
 		return mapper.delete(bno) == 1;
 	}
 
+//	@Override //페이징 없는 것
+//	public List<BoardVO> getList() {
+//		log.info("================getList게시글 전체 목록 읽어오기  ");
+//		return mapper.getList();
+//		
+//	}
+
 	@Override
-	public List<BoardVO> getList() {
-		log.info("================getList게시글 전체 목록 읽어오기  ");
-		return mapper.getList();
+	public List<BoardVO> getList(Criteria cri) { //페이징 있는 것
+		log.info("===========getList페이징 게시글 목록: "+cri.getPageNum()+"페이지양 : "+cri.getAmount());
 		
+		return mapper.getListWithPaging(cri);
+	}
+
+	@Override
+	public int getTotal(Criteria cri) {
+		log.info("get Total Count ==========================================");
+		return mapper.getTotalCount(cri);
 	}
 
 }

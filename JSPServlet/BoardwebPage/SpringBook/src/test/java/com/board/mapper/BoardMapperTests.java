@@ -1,5 +1,7 @@
 package com.board.mapper;
 
+import java.util.List;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +9,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.board.domain.BoardVO;
+import com.board.domain.Criteria;
 
 import lombok.Setter;
 import lombok.extern.log4j.Log4j;
@@ -75,4 +78,23 @@ public class BoardMapperTests {
 		log.info("update====================================================================");
 		
 	}
+	@Test
+	public void testPaging() {
+		log.info("paging====================================================================");
+		Criteria cri  =new Criteria();
+		List<BoardVO> list = mapper.getListWithPaging(cri);
+		list.forEach(board -> log.info(board));
+		log.info("paging====================================================================");
+	}
+	@Test
+	public void testSearch() {
+		log.info("Search test========================================================");
+		Criteria cri = new Criteria();
+		cri.setKeyword("result");
+		cri.setType("TC");
+		List<BoardVO> list = mapper.getListWithPaging(cri);
+		list.forEach(board->log.info(board));
+		log.info("Search test========================================================");
+	}
+	
 }
