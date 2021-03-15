@@ -17,6 +17,8 @@
 				<form role="form" action="/board/modify" method="POST">
 					<input type="hidden" name="pageNum" value='<c:out value="${cri.pageNum }" />' />
 					<input type="hidden" name="amount" value='<c:out value="${cri.amount}" />' />
+					<input type="hidden" name="type" value="${pageMaker.cri.type }" />
+					<input type="hidden" name="keyword" value="${pageMaker.cri.keyword }" />
 					<div class="form-group">
 						<label>B.No</label>
 						<input class="form-control" name="bno" value='<c:out value="${board.bno }" />'  readonly="readonly" />
@@ -68,10 +70,14 @@ $(document).ready(function(){
 			formObj.attr("action","/board/list").attr("method","get");
 			var pageNumTag = $("input[name='pageNum']").clone();
 			var amountTag = $("input[name='amount']").clone();
+			var keyboardTag = $("input[name='keyboard']").clone();
+			var typeTag = $("input[name='type']").clone();
 			
 			formObj.empty();
 			formObj.append(pageNumTag);
 			formObj.append(amountTag);
+			formObj.append(keyboardTag);
+			formObj.append(typeTag);
 			
 			//아래것은 작동은 하는데 잘못됐음 비슷해서 남겨두도록 함 
 			//formObj.attr("action","/board/list?pageNum="+${pageNum}+"&amount="+${amount}).attr("method","get");

@@ -31,7 +31,7 @@
 					<c:forEach items="${list }" var="board">
 						<tr>
 							<td><c:out value="${board.bno }"></c:out></td>
-							<td><a class="move" href='<c:out value="${board.bno }" />'>${board.title}</a></td>
+							<td><a class="move" href='<c:out value="${board.bno }" />'>${board.title} <b>[ <c:out value="${board.replycnt }" /> ]</b></a></td>
 							<td><c:out value="${board.writer}"></c:out></td>
 							<td> <fmt:formatDate pattern="yyyy-MM-dd" value="${board.regdate }"/> </td>
 							<td> <fmt:formatDate pattern="yyyy-MM-dd" value="${board.updateDate}"/> </td>
@@ -42,19 +42,22 @@
 				<!-- 페이징 ============================= -->
 				<div class="pull-right">
 					<ul class="pagination">
-						<c:if test="${pageMaker.prev }">
+						<c:if test="${pageMaker.prev}">
 							<li class="paginate_button previous">
-								<a href="${pageMaker.startPage -1 }">Previous</a>
+								<a href="${pageMaker.startPage -1}" style="z-index: 10000" >Previous</a>
 							</li>
-						</c:if> 
-						<c:forEach var="num" begin="${pageMaker.startPage }" end="${pageMaker.endPage }">
-							<li class="paginate_button ${pageMaker.cri.pageNum == num? 'active':'' }">
-								<a href="${num }">${num }</a>
+						</c:if>
+
+						<c:forEach var="num" begin="${pageMaker.startPage}" end="${pageMaker.endPage}">
+							
+							<li class='paginate_button  ${pageMaker.cri.pageNum == num ? "active":"" } ' >
+								<a  href="${num }" style="z-index: 10000">${num}</a>
 							</li>
 						</c:forEach>
-						<c:if test="${pageMaker.next }">
+
+						<c:if test="${pageMaker.next}">
 							<li class="paginate_button next">
-								<a href="${pageMaker.endPage +1 }">Next</a>
+								<a href="${pageMaker.endPage +1 }" style="z-index: 10000" >Next</a>
 							</li>
 						</c:if>
 					</ul>
@@ -150,7 +153,7 @@
 		});
 		//검색용
 		var searchForm = $("#searchForm");
-		$("searchForm").on("click",function(e){
+		$("#searchForm button").on("click",function(e){
 			if(!searchForm.find("option:selected").val()){
 				alert("종류를 선택하세요");
 				return false;
@@ -159,7 +162,8 @@
 				alert("키워드를 입력하세요");
 				return false;
 			}
-			searchForm.find("input[name='pageNum']").val("1");
+			
+			searchForm.find('input[name="pageNum"]').val("1");
 			e.preventDefault();
 			searchForm.submit();
 			

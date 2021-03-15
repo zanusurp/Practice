@@ -1,7 +1,5 @@
 package com.board.controller;
 
-import javax.xml.ws.soap.Addressing;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -67,9 +65,11 @@ public class BoardController {
 		if(service.modify(board)) {
 			rttr.addFlashAttribute("result","modified"+board.getBno());
 		}
-		rttr.addAttribute("pageNum", cri.getPageNum());
-		rttr.addAttribute("amount",cri.getAmount());
-		return "redirect:/board/list";
+//		rttr.addAttribute("pageNum", cri.getPageNum());
+//		rttr.addAttribute("amount",cri.getAmount());
+//		rttr.addAttribute("type",cri.getType());
+//		rttr.addAttribute("keyword",cri.getKeyword());
+		return "redirect:/board/list"+cri.getListLink();
 	}
 	@PostMapping("/remove")
 	public String remove(@RequestParam("bno")Long bno,@ModelAttribute("cri") Criteria cri ,RedirectAttributes rttr) {
