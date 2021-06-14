@@ -4,9 +4,12 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import com.board.domain.BoardAttachVO;
 import com.board.domain.BoardVO;
 import com.board.domain.Criteria;
+import com.board.mapper.BoardAttachMapper;
 import com.board.mapper.BoardMapper;
 
 import lombok.AllArgsConstructor;
@@ -21,10 +24,21 @@ public class BoardServiceImpl implements BoardService{
 	@Setter(onMethod_=@Autowired)//4버젼 이후로 자동처리 된다고는 하지만 오류대비
 	private BoardMapper mapper;
 	
+	@Setter(onMethod_=@Autowired)
+	private BoardAttachMapper attachMapper;
+	
+	@Transactional
 	@Override
 	public void register(BoardVO board) {
 		log.info("==============register 글 넣기 : "+board);
 		mapper.insertSelectKey(board);
+		if(board.getAttachList()==null|| board.getAttachList().size()<=0) {
+			return;
+		}
+		board.getAttachList().forEach(attach->{
+			attach.setBno(board.getBno());
+			attachMapper.insert(attach);
+		});
 		
 	}
 
@@ -37,12 +51,25 @@ public class BoardServiceImpl implements BoardService{
 	@Override
 	public boolean modify(BoardVO board) {
 		log.info("===========modify 게시글 수정 : "+board);
-		return mapper.update(board) == 1;
+		attachMapper.deleteAll(board.getBno());
+		
+		boolean modifyResult = mapper.update(board) == 1;
+		if(modifyResult && board.getAttachList() != null && board.getAttachList().size()>0) {
+			board.getAttachList().forEach(attach -> {
+				attach.setBno(board.getBno());
+				attachMapper.insert(attach);
+			});
+		}
+		
+		return modifyResult;
 	}
 
+	@Transactional
 	@Override
 	public boolean remove(Long bno) {
 		log.info("===========remove 게시글 삭제  : "+bno);
+		log.info("게시글에 달린 첨부 파일들도 삭제 : "+bno);
+		attachMapper.deleteAll(bno);
 		return mapper.delete(bno) == 1;
 	}
 
@@ -64,6 +91,13 @@ public class BoardServiceImpl implements BoardService{
 	public int getTotal(Criteria cri) {
 		log.info("get Total Count ==========================================");
 		return mapper.getTotalCount(cri);
+	}
+
+	@Override
+	public List<BoardAttachVO> getAttachList(Long bno) {
+		log.info("get Attach List by Bno : "+ bno);
+		return attachMapper.findByBno(bno);
+		
 	}
 
 }

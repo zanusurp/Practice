@@ -2,6 +2,9 @@ package com.board.controller;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 import java.nio.file.Files;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -20,6 +23,7 @@ import org.springframework.ui.Model;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -44,6 +48,7 @@ public class UploadController {//스프링 레가시 mvc
 	}
 	
 	private String getFolder() {
+		log.info("오늘 날짜로 알아 보고 폴더 만들기 시작");
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		Date date = new Date();
 		
@@ -130,15 +135,18 @@ public class UploadController {//스프링 레가시 mvc
 		log.info("파일 경로"+uploadPath);
 		if(uploadPath.exists()==false) {
 			uploadPath.mkdirs();
+			log.info("경로는 만들어졌음");
 		}
+		log.info("경로는 이미 만들어졌으므로 다음 진행");
 		for (MultipartFile multipartFile : uploadFile) {
+			log.info("파일 입력 시작.................................");
 			AttachFileDTO attachDTO = new AttachFileDTO();
-			
+			log.info("파일 이름 추출 부분 초기 접근하나");
 			String uploadFileName = multipartFile.getOriginalFilename();
 			log.info("파일 원래 이름 :  "+uploadFileName);
 			uploadFileName = uploadFileName.substring(uploadFileName.lastIndexOf("\\")+1);
 			log.info("섭스트링 후 업로드 파일 이름 : "+uploadFileName);
-			attachDTO.setFileName(uploadFolderPath);
+			attachDTO.setFileName(uploadFileName);
 			UUID uuid = UUID.randomUUID(); //개인적으론 시치분 생각하지만 그것마저도 중복위험있으니 
 			
 			uploadFileName = uuid.toString()+"_"+uploadFileName;
@@ -171,9 +179,9 @@ public class UploadController {//스프링 레가시 mvc
 	@GetMapping("/display")
 	@ResponseBody
 	public ResponseEntity<byte[]> getFile(String fileName){
-		log.info("파일 일이름 : " + fileName);
+		log.info("디스플레이할 파일 일이름 : " + fileName);
 		File file = new File("c:\\upload\\"+fileName);
-		log.info("파일 : file : "+ file);
+		log.info("디스플레이할 파일 서버에서 불러오는것 확인 : file : "+ file);
 		ResponseEntity<byte[]> result = null;
 		
 		try {
@@ -181,7 +189,7 @@ public class UploadController {//스프링 레가시 mvc
 			header.add("Content-Type", Files.probeContentType(file.toPath()));
 			result = new ResponseEntity<>(FileCopyUtils.copyToByteArray(file),header,HttpStatus.OK);
 			
-		} catch (Exception e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		return result;
@@ -202,5 +210,68 @@ public class UploadController {//스프링 레가시 mvc
 		}
 		
 		return new ResponseEntity<Resource>(resource,headers,HttpStatus.OK);
+	}
+	//다운로드 ie 처리 추가 
+	@GetMapping(value = "/download2", produces = {MediaType.APPLICATION_OCTET_STREAM_VALUE})
+	@ResponseBody
+	public ResponseEntity<Resource> donwloadFile2(@RequestHeader("User-Agent") String userAgent ,String fileName){
+		log.info("다운로드 팡릴  : "+fileName);
+		Resource resource = new FileSystemResource("c:\\upload\\"+fileName);
+		log.info("리소스  ; "+resource);
+		
+		if(resource.exists() == false) {
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+		}
+				
+		String resourceName = resource.getFilename();
+		log.info("파일 이름 : "+ resourceName);
+		
+		String resourceOriginalName = resourceName.substring(resourceName.indexOf("_")+1);
+		log.info("파일 원래 이름 갖고 오기" + resourceOriginalName); //앞에 s 다 떼고 원본받게 하기 위함
+		HttpHeaders headers = new HttpHeaders();
+		log.info("http 헤더  : "+headers);
+		try {
+			String downloadName = null;
+			if(userAgent.contains("Trident")) {
+				log.info("익스");
+				downloadName = URLEncoder.encode(resourceOriginalName,"UTF-8").replace("\\+", " ");
+			}else if(userAgent.contains("Edge")) {
+				log.info("엣지");
+				downloadName = URLEncoder.encode(resourceOriginalName,"UTF-8");
+				log.info("엣지 이름 : "+downloadName);
+			}else {
+				log.info("크롬 브라우더");
+				downloadName = new String(resourceOriginalName.getBytes("UTF-8"),"ISO-8859-1");
+			}
+			log.info("다운로드 될 파일 이름  : "+downloadName);
+			headers.add("Content-Disposition","attachment;filename="+ downloadName);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return new ResponseEntity<Resource>(resource,headers,HttpStatus.OK);
+		
+	}
+	@PostMapping("/deleteFile")
+	@ResponseBody
+	public ResponseEntity<String> deleteFile(String fileName, String type){
+		log.info("삭제될 파일 : "+fileName);
+		File file;
+		
+		try {
+			file = new File("c:\\upload\\"+URLDecoder.decode(fileName, "UTF-8"));
+			file.delete();
+			if(type.equals("image")) {
+				String largeFileName = file.getAbsolutePath().replace("s_", "");
+				log.info("섬네일 말고 원본 : "+largeFileName);
+				file = new File(largeFileName);
+				file.delete();
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+		}
+		return new ResponseEntity<>("deleted",HttpStatus.OK);
 	}
 }

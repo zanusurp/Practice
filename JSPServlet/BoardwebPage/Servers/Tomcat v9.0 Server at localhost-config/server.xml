@@ -165,7 +165,7 @@
       </Context>
       
       
-      <Context docBase="productWeb" path="/productWeb" reloadable="true" source="org.eclipse.jst.jee.server:productWeb"/></Host>
+      <Context docBase="productWeb" path="/productWeb" reloadable="true" source="org.eclipse.jst.jee.server:productWeb"/><Context docBase="controlelrTest" path="/test" reloadable="true" source="org.eclipse.jst.jee.server:controlelrTest"/></Host>
     </Engine>
   </Service>
 </Server>
