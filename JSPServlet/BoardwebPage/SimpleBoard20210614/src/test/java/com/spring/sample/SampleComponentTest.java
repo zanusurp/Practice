@@ -1,4 +1,4 @@
-package com.book.sample;
+package com.spring.sample;
 
 import static org.junit.Assert.assertNotNull;
 
@@ -15,17 +15,17 @@ import lombok.extern.log4j.Log4j;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
 @Log4j
-public class SampleTests {
-	@Setter(onMethod_= @Autowired)
+public class SampleComponentTest {
+	@Setter(onMethod_= {@Autowired})
 	private Restaurant restaurant;
 	
 	@Test
 	public void testExist() {
 		assertNotNull(restaurant);
+		log.info("--------------------");
+		log.info(restaurant+"존재");
+		log.info("셰프 있나? : "+restaurant.getChef());
 		
-		log.info(restaurant);
-		log.info("-------------------------------------");
-		log.info(restaurant.getChef());
 	}
 	
 }
